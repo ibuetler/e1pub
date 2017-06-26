@@ -87,14 +87,11 @@ fi
 nginx -g "daemon off;"
 ```
 
-## Example
 
-An example of using this image can be found in [examples/user-nginx][example].
 
 [alpinelinux]: https://www.alpinelinux.org/
 [consul]: https://consul.io/
 [s6]: http://www.skarnet.org/software/s6/
 [s6overlay]: https://github.com/just-containers/s6-overlay
-[dockeralpine]: https://github.com/smebberson/docker-alpine
+[dockeralpine]: https://github.com/e1pub/docker/
 [nginx]: http://nginx.org/
-[example]: https://github.com/smebberson/docker-alpine/tree/master/examples/user-nginx
