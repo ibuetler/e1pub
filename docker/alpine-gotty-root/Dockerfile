@@ -49,5 +49,9 @@ ADD ./files/.aliases /root/.aliases
 RUN echo "source /root/.aliases" >> /root/.zshrc
 RUN echo 'root:rTGeUeFBzTucbyG2' | chpasswd
 
-CMD /usr/local/bin/gotty --port 8080 --permit-write /bin/zsh
+ADD root /
+
+
+EXPOSE 8080
+
 
