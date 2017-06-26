@@ -93,5 +93,5 @@ nginx -g "daemon off;"
 [consul]: https://consul.io/
 [s6]: http://www.skarnet.org/software/s6/
 [s6overlay]: https://github.com/just-containers/s6-overlay
-[dockeralpine]: https://github.com/e1pub/docker/
+[dockeralpine]: https://github.com/ibuetler/e1pub/docker/
 [nginx]: http://nginx.org/
