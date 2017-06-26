@@ -15,16 +15,8 @@ This image features:
 
 ## Versions
 
-- `3.2.0`, `latest` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.2.0/alpine-base/Dockerfile)
-- `3.1.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.1.0/alpine-base/Dockerfile)
-- `3.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.0.0/alpine-base/Dockerfile)
-- `2.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v2.0.0/alpine-base/Dockerfile)
-- `1.2.1` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.2.1/alpine-base/Dockerfile)
-- `1.2.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.2.0/alpine-base/Dockerfile)
-- `1.1.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.1.0/alpine-base/Dockerfile)
-- `1.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.0.0/alpine-base/Dockerfile)
+- `1.0.2`, `latest` [(Dockerfile)](https://github.com/ibuetler/e1pub/tree/master/docker/alpine-base/Dockerfile)
 
-[See VERSIONS.md for image contents.](https://github.com/smebberson/docker-alpine/blob/master/alpine-base/VERSIONS.md)
 
 ## Usage
 
@@ -53,4 +45,4 @@ An example of using this image can be found in [examples/user-alpine](alpinebase
 
 [alpinebaseexample]: https://github.com/smebberson/docker-alpine/tree/master/examples/user-alpine
 [godnsmasq]: https://github.com/janeczku/go-dnsmasq
-[dockeralpine]: https://github.com/smebberson/docker-alpine
+[dockeralpine]: https://github.com/ibuetler/e1pub/tree/master/docker/alpine-base
