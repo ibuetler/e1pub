@@ -1,0 +1,23 @@
+drmc() {
+  docker rm $(docker ps -q -a);
+}
+
+drmi() {
+  docker rmi $(docker images --filter dangling=true --quiet)
+}
+
+drmv() {
+  docker volume rm $(docker volume ls -qf dangling=true)
+}
+
+dpull() {
+  for image in $(docker images | awk {'print $1":"$2'} | grep -v '<none>' | grep -v 'REPOSITORY:TAG' | sort | uniq)
+  do
+    docker pull "${image}"
+  done
+}
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
