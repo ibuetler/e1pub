@@ -1,5 +1,5 @@
-FROM alpine:edge
-MAINTAINER Tim Haak <tim@haak.co>
+FROM hackinglab/alpine-base
+MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
 ENV LANG="en_US.UTF-8" \
     LC_ALL="en_US.UTF-8" \
@@ -47,7 +47,7 @@ ADD ./files/timhaak.zsh-theme /root/.oh-my-zsh/themes/timhaak.zsh-theme
 ADD ./files/.aliases /root/.aliases
 
 RUN echo "source /root/.aliases" >> /root/.zshrc
-RUN adduser -D -u 1000 hacker
+RUN adduser -D -u 2000 hacker
 RUN echo 'hacker:compass' | chpasswd
 RUN echo 'root:rTGeUeFBzTucbyG2' | chpasswd
 
@@ -56,5 +56,9 @@ RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /home/hacker/.oh-my-zs
 RUN chown -R hacker:hacker /home/
 RUN sed -i 's/robbyrussell/risto/g' /home/hacker/.zshrc
 
-CMD cd /home/hacker; sudo -u hacker /usr/local/bin/gotty --port 8080 --permit-write /bin/zsh
+ADD root /
+
+
+EXPOSE 8080
+
 
