@@ -58,7 +58,6 @@ RUN sed -i 's/robbyrussell/risto/g' /home/hacker/.zshrc
 
 ADD root /
 
-
 EXPOSE 8080
 
 
