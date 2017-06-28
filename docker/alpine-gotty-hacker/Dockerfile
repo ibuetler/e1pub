@@ -47,7 +47,7 @@ ADD ./files/timhaak.zsh-theme /root/.oh-my-zsh/themes/timhaak.zsh-theme
 ADD ./files/.aliases /root/.aliases
 
 RUN echo "source /root/.aliases" >> /root/.zshrc
-RUN adduser -D -u 2000 hacker
+RUN adduser -D -u 1337 hacker
 RUN echo 'hacker:compass' | chpasswd
 RUN echo 'root:rTGeUeFBzTucbyG2' | chpasswd
 
