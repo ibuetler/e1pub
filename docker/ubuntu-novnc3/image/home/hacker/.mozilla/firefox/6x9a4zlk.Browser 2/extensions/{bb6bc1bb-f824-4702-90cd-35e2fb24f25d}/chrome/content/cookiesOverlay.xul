@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/toolbarbutton.css" type="text/css"?>
+<?xml-stylesheet href="chrome://cookiesmanagerplus/skin/cookiesOverlay.css" type"text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://cookiesmanagerplus/locale/cookiesOverlay.dtd">
+
+<overlay id="cookiesOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<window id="CookiesDialog">
+		<script type="application/javascript" src="common.js"/>
+		<script type="application/javascript" src="cookiesOverlay.js"/>
+		<script type="application/javascript" src="update.js"/>
+		<script type="application/javascript" src="libOut.js"/>
+		<script type="application/javascript" src="commonFunc.js"/>
+		<button	id="cmp"
+						tooltiptext="&coomanPlus;"
+						accesskey="&coomanPlus.open.accesskey;"
+						type="menu"
+		>
+			<menupopup>
+				<menuitem label="&coomanPlus.open;"
+									oncommand="coomanPlus.openCMP();"
+									accesskey="&coomanPlus.open.accesskey;"
+									class="menuitem-iconic cmp"
+				/>
+				<menuseparator/>
+				<menuitem id="cmpSync"
+									label="&synchronize;"
+									type="checkbox"
+									class="menuitem-iconic"
+									tooltiptext="&synchronize.info;"
+									accesskey="&synchronize.accesskey;"
+									oncommand="coomanPlus.syncChange(event);"
+				/>
+			</menupopup>
+		</button>
+	</window>
+</overlay>

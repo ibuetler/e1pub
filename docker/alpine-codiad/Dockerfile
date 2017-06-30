@@ -33,6 +33,8 @@ apk add --no-cache \
 COPY root/ /
 
 RUN mkdir /workspace
+RUN mkdir /workspace/mapper
+RUN mkdir /workspace/www
 
 # ports and volumes
 EXPOSE 80

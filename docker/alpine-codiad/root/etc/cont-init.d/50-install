@@ -46,7 +46,9 @@ fi
 sed -i s/' echo formatJSEND("error","Warning: File ".'/'#echo formatJSEND("error","Warning: File ".'/ \
 	/config/www/components/active/class.active.php
 
+ln -s /workspace/mapper /config/www/workspace/HL/mapper
+ln -s /workspace/www /config/www/workspace/HL/www
+
 # permissions
 chown -R abc:abc /config
 chown -R abc:abc /workspace
-ln -s /workspace /config/www/workspace/HL/mapper
