@@ -15,3 +15,7 @@ User gid:    $(id -g $myuser)
 -------------------------------------
 "
 
+cp /etc/cont-init.d/.bashrc /home/$myuser
+chown $myuser:$myuser /home/$myuser/.bashrc
+
+

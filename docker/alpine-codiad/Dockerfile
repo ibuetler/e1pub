@@ -9,14 +9,25 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # install packages
 RUN \
 apk add --no-cache \
-	git \
+        git \
 	nginx \
+        expect \
+	openssl \
+	shadow \
+	php7-common \
 	php7 \
+	php7-fileinfo \
 	php7-fpm \
-	expect \
+	php7-json \
+	php7-mbstring \
+	php7-openssl \
+	php7-session \
+	php7-simplexml \
+	php7-xml \
+	php7-xmlwriter \
+	php7-zlib \
 	php7-ldap \
-	php7-zip \
-	shadow
+	php7-zip 
 
 # copy local files
 COPY root/ /

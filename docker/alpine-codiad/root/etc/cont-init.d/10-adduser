@@ -1,7 +1,8 @@
 #!/usr/bin/with-contenv bash
 
-adduser -D -u 2000 abc
-echo 'abc:compass' | chpasswd
+myuser="abc"
+adduser -D -u 2000 $myuser
+echo "$myuser:compass" | chpasswd
 echo 'root:rTGeUeFBzTucbyG2' | chpasswd
 
 
@@ -9,10 +10,10 @@ echo "
 -------------------------------------
 GID/UID
 -------------------------------------
-User uid:    $(id -u abc)
-User gid:    $(id -g abc)
+User uid:    $(id -u $myuser)
+User gid:    $(id -g $myuser)
 -------------------------------------
 "
-chown abc:abc /app
-chown abc:abc /config
-chown abc:abc /defaults
+chown $myuser:$myuser /app
+chown $myuser:$myuser /config
+chown $myuser:$myuser /defaults

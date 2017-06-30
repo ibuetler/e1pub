@@ -37,6 +37,11 @@ fi
 [[ ! -e /config/www/config.php ]] && \
 	cp /defaults/config.php /config/www/config.php
 
+# copy fastcgi_params
+[[ ! -e /config/nginx/fastcgi_params ]] && \
+        cp /defaults/fastcgi_params /config/nginx/fastcgi_params
+
+
 # fix collaboration error
 sed -i s/' echo formatJSEND("error","Warning: File ".'/'#echo formatJSEND("error","Warning: File ".'/ \
 	/config/www/components/active/class.active.php
