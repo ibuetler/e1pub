@@ -15,6 +15,7 @@ RUN apt-get install -y --no-install-recommends --allow-unauthenticated \
         lxde x11vnc xvfb \
         firefox \
         nginx \
+	openjdk-8-jre \
 	wget \
         python-pip python-dev build-essential \
         dbus-x11 x11-utils 
@@ -39,13 +40,6 @@ RUN pip install setuptools wheel
 RUN pip install -r /usr/lib/web/requirements.txt
 
 # HACKER HOME
-RUN mkdir -p /home/hacker/Desktop
-RUN mkdir -p /home/hacker/Downloads
-RUN mkdir -p /home/hacker/Desktop
-RUN mkdir -p /home/hacker/Downloads
-RUN ln -s /home/hacker/Downloads /home/hacker/Desktop/Downloads
-RUN cp /mozilla.tar /home/hacker/
-RUN cd /home/hacker && tar -xvf mozilla.tar
 RUN useradd --shell /bin/bash --user-group hacker
 
 
