@@ -26,8 +26,8 @@ RUN rm -rf /var/lib/apt/lists/*
 
 # ZAP
 RUN mkdir -p /opt/applic/
-RUN wget https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Linux.tar.gz -P /opt/applic/
-RUN tar -xvzf /opt/applic/ZAP_2.6.0_Linux.tar.gz -C /opt/applic/
+#RUN wget https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Linux.tar.gz -P /opt/applic/
+#RUN tar -xvzf /opt/applic/ZAP_2.6.0_Linux.tar.gz -C /opt/applic/
 #RUN rm /opt/applic/ZAP_2.6.0_Linux.tar.gz
 
 # tini for subreap                                   
