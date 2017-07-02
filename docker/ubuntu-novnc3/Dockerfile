@@ -25,8 +25,10 @@ RUN apt-get autoremove
 RUN rm -rf /var/lib/apt/lists/*
 
 # ZAP
-RUN wget https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Linux.tar.gz
-RUN tar -xvzf ZAP_2.6.0_Linux.tar.gz
+RUN mkdir -p /opt/applic/
+RUN wget https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Linux.tar.gz -P /opt/applic/
+RUN tar -xvzf /opt/applic/ZAP_2.6.0_Linux.tar.gz -C /opt/applic/
+#RUN rm /opt/applic/ZAP_2.6.0_Linux.tar.gz
 
 # tini for subreap                                   
 ENV TINI_VERSION v0.9.0
