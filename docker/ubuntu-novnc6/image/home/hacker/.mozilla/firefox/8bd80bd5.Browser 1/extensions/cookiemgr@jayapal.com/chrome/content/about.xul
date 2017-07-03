@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://cookiemgr/locale/cookiemgr.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="About"
+    title="&about.title;"
+    persist="screenX screenY width height"
+    buttons="accept"
+    width="300px"
+>
+<hbox flex="10">
+<vbox flex="10">
+<label value="Version 5.12" style="font-weight: bold; font-size:18px;"/>
+<label value="" width="500" style="width:500px" />
+<label value="&about.link.releasenotes;" class="text-link" href="https://addons.mozilla.org/en-US/firefox/addon/cookie-manager/versions/" />
+<label value="&about.link.aboutdeveloper;" class="text-link" href="https://addons.mozilla.org/en-US/firefox/user/3591313/"/>
+<label value="&about.link.facebookpage;" class="text-link" href="http://www.facebook.com/pages/Advanced-Cookie-Manager-Addon-For-Firefox/194360817277515"/>
+<label value="&main.links.contribute;" crop="center" class="text-link" href="https://addons.mozilla.org/en-US/firefox/addon/cookie-manager/developers?src=api" />
+</vbox>
+</hbox>
+</dialog>

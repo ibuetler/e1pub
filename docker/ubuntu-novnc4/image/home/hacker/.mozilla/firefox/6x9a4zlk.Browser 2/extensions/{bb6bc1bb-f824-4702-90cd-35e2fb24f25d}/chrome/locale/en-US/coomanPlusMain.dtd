@@ -1,0 +1,229 @@
+<!ENTITY		tree.picker																							"Show/hide columns">
+
+<!ENTITY		menu.Options.label																			"Options">
+<!ENTITY		menu.Options.accesskey																	"O">
+<!ENTITY		menu.FirefoxCM.label																		"Native Firefox Cookies Viewer">
+<!ENTITY		menu.FirefoxCM.accesskey																"N">
+<!ENTITY		menu.close.label																				"Close">
+<!ENTITY		menu.selectAllShown.label																"Select All">
+<!ENTITY		menu.invertSelection.label															"Invert selected">
+<!ENTITY		menu.edit.label																					"Edit">
+<!ENTITY		menu.edit.accesskey																			"E">
+<!ENTITY		menu.new.label																					"New Cookie">
+<!ENTITY		menu.new.accesskey																			"N">
+<!ENTITY		menu.delete.label																				"Delete">
+<!ENTITY		menu.delete.accesskey																		"D">
+<!ENTITY		menu.delete.block.label																	"Delete and block">
+<!ENTITY		menu.delete.block.accesskey															"K">
+<!ENTITY		menu.delete.expired.label																"Delete expired">
+<!ENTITY		menu.delete.expired.accesskey														"X">
+<!ENTITY		menu.delete.more.label																	"Delete ...">
+<!ENTITY		menu.delete.more.accesskey															"L">
+<!ENTITY		menu.select.tooltip 																		"Select All / Invert (right click)">
+<!ENTITY		menu.filter.label 																			"Search filter">
+<!ENTITY		menu.filter.name 																				"Name">
+<!ENTITY		menu.filter.host 																				"Domain">
+<!ENTITY		menu.filter.content 																		"Content">
+<!ENTITY		menu.filter.case																				"Case sensitive">
+<!ENTITY		menu.filter.regex																				"RegExp">
+<!ENTITY		menu.filter.regex.info																	"Right click for more info">
+<!ENTITY		menu.cookiesPermissions.label														"Cookies Permissions">
+
+<!ENTITY		menu.filter.hostType																		"Domain match">
+<!ENTITY		menu.filter.normal																			"Normal">
+<!ENTITY		menu.filter.normal.info																	"Searching for domain.com will include sub-domains">
+<!ENTITY		menu.filter.relaxed																			"Relaxed">
+<!ENTITY		menu.filter.relaxed.info																"Searching for sub2.sub1.domain.com will match .domain.com as well as .sub1.domain.com (starts with dot)">
+<!ENTITY		menu.filter.exact																				"Exact">
+<!ENTITY		menu.filter.exact.info																	"Exact match only: domain.com will not match .domain.com (starts with dot)">
+
+<!ENTITY		export.button																						"Export">
+<!ENTITY		export.button.accesskey																	"X">
+<!ENTITY		export.clipboard																				"Copy to clipboard">
+<!ENTITY		export.clipboard.accesskey															"C">
+<!ENTITY		export.file																							"Save to file">
+<!ENTITY		export.file.accesskey																		"F">
+<!ENTITY		export.success																					"File successfully saved.">
+<!ENTITY		export.openfolder																				"Open folder with saved file?">
+
+<!ENTITY		backup																									"Backup">
+<!ENTITY		backup.accesskey																				"B">
+<!ENTITY		backup.button																						"Backup/Restore">
+<!ENTITY		backup.button.accesskey																	"B">
+<!ENTITY		backup.selected																					"Backup Selected">
+<!ENTITY		backup.selected.accesskey																"S">
+<!ENTITY		backup.visible																					"Backup Shown">
+<!ENTITY		backup.visible.info																			"Backup currently shown in the list">
+<!ENTITY		backup.visible.accesskey																"H">
+<!ENTITY		backup.all																							"Backup All">
+<!ENTITY		backup.all.accesskey																		"B">
+<!ENTITY		backup.corrupted																				"File is corrupted">
+<!ENTITY		backup.protected																				"File is password protected">
+<!ENTITY		restore.all																							"Restore All">
+<!ENTITY		restore.all.accesskey																		"R">
+<!ENTITY		restore.selected																				"Restore Selected">
+<!ENTITY		restore.selected.accesskey															"E">
+<!ENTITY		restore.visible																					"Restore Shown">
+<!ENTITY		restore.visible.info																		"Restore for currently shown in the list only">
+<!ENTITY		restore.visible.accesskey																"N">
+<!ENTITY		restore.file.open																				"Open file">
+<!ENTITY		restore.success																					"Successfully restored # cookie(s)">
+<!ENTITY		restore.none																						"No cookies restored">
+
+<!ENTITY		button.edit.accesskey																		"E">
+<!ENTITY		button.new.accesskey																		"N">
+<!ENTITY		button.invert.accesskey																	"I">
+<!ENTITY		button.all.accesskey																		"A">
+<!ENTITY		button.delete.accesskey																	"D">
+
+<!ENTITY		cookie.domain.label																			"Domain">
+<!ENTITY		cookie.domain.accesskey																	"O">
+<!ENTITY		cookie.name.label																				"Name">
+<!ENTITY		cookie.value.label																			"Content">
+<!ENTITY		cookie.path.label																				"Path">
+<!ENTITY		cookie.expire.label																			"Expires">
+<!ENTITY		cookie.expired																					"This cookie is expired">
+<!ENTITY		cookie.expire.progress																	"Will expire in #">
+<!ENTITY		cookie.expire.progress.life															"#&#37; life left">
+<!ENTITY		cookie.expire.years																			"years">
+<!ENTITY		cookie.expire.year																			"year">
+<!ENTITY		cookie.expire.days																			"days">
+<!ENTITY		cookie.expire.day																				"day">
+<!ENTITY		cookie.expire.hours																			"hours">
+<!ENTITY		cookie.expire.hour																			"hour">
+<!ENTITY		cookie.expire.minutes																		"minutes">
+<!ENTITY		cookie.expire.minute																		"minute">
+<!ENTITY		cookie.expire.seconds																		"seconds">
+<!ENTITY		cookie.expire.second																		"second">
+<!ENTITY		cookie.isSecure.label																		"Send for">
+<!ENTITY		cookie.creationTime.label																"Created">
+<!ENTITY		cookie.lastAccessed.label																"Accessed">
+<!ENTITY		cookie.isHttpOnly.label																	"HTTP Only">
+<!ENTITY		cookie.policy.label																			"Policy">
+<!ENTITY		cookie.status.label																			"Status">
+<!ENTITY		cookie.secure.label																			"Secure">
+<!ENTITY		cookie.type.label																				"Type">
+<!ENTITY		cookie.size.label																				"Size">
+<!ENTITY		cookie.readonly.label																		"Read-only">
+<!ENTITY		cookie.originAttributes.label														"originAttributes">
+
+<!ENTITY		datepickerwindow.title.label														"Date Picker">
+<!ENTITY		datepickerwindow.button.label														"Calendar">
+
+<!ENTITY		props.policy.label																			"Policy:">
+<!ENTITY		props.status.label																			"Status:">
+<!ENTITY		props.lastAccessed.label																"Last Accessed:">
+<!ENTITY		props.isHttpOnly.label																	"HTTP Only:">
+<!ENTITY		props.creationTime.label																"Created:">
+<!ENTITY		props.type.label																				"Type:">
+<!ENTITY		props.size.label																				"Size:">
+<!ENTITY		props.originAttributes.label														"originAttributes:">
+
+<!ENTITY		props.name.accesskey																		"M">
+<!ENTITY		props.value.accesskey																		"N">
+<!ENTITY		props.path.accesskey																		"A">
+<!ENTITY		props.secure.accesskey																	"F">
+<!ENTITY		props.expires.accesskey																	"X">
+<!ENTITY		props.policy.accesskey																	"I">
+<!ENTITY		props.status.accesskey																	"U">
+<!ENTITY		props.lastAccessed.accesskey														"S">
+<!ENTITY		props.isHttpOnly.accesskey															"H">
+<!ENTITY		props.creationTime.accesskey														"R">
+<!ENTITY		props.isProtected.accesskey															"T">
+<!ENTITY		props.type.accesskey																		"Y">
+<!ENTITY		props.size.accesskey																		"Z">
+<!ENTITY		props.originAttributes.accesskey												"B">
+
+<!ENTITY		infoRow.select																					"Select">
+<!ENTITY		infoRow.copy																						"Copy to clipboard">
+<!ENTITY		infoRow.move.up																					"Move up">
+<!ENTITY		infoRow.move.down																				"Move down">
+<!ENTITY		infoRow.reset																						"Reset Info Rows Order">
+<!ENTITY		infoRow.wrap																						"Wrap text">
+<!ENTITY		infoRow.expand																					"JSON Expand">
+<!ENTITY		infoRow.urlDecode																				"URL Decode">
+<!ENTITY		infoRow.base64decode																		"Base64 decode">
+<!ENTITY		infoRow.actions																					"Show action buttons">
+<!ENTITY		infoRow.actions.info																		"Action buttons allow change order in which actions applied to the content">
+<!ENTITY		infoRow.action.tooltip																	"Click to activate/deactivate">
+<!ENTITY		infoRow.action.tooltip2																	"Drag'n drop to change sequence of the execution">
+<!ENTITY		protect.protect																					"Protect">
+<!ENTITY		protect.protect.accesskey																"P">
+<!ENTITY		protect.unprotect																				"Unprotect">
+<!ENTITY		protect.unprotect.accesskey															"U">
+<!ENTITY		protect.isProtected																			"Protected">
+<!ENTITY		protect.open																						"Open $NAME$">
+<!ENTITY		protect.open.accesskey																	"N">
+
+<!ENTITY		menu.file																								"File">
+<!ENTITY		menu.file.accesskey																			"F">
+<!ENTITY		menu.edit																								"Edit">
+<!ENTITY		menu.edit.accesskey																			"E">
+<!ENTITY		menu.view																								"View">
+<!ENTITY		menu.view.accesskey																			"V">
+<!ENTITY		menu.view.tree																					"Tree view">
+<!ENTITY		menu.view.tree.accesskey																"T">
+<!ENTITY		menu.view.info																					"Cookie info">
+<!ENTITY		menu.view.info.accesskey																"I">
+<!ENTITY		menu.tools																							"Tools">
+<!ENTITY		menu.tools.accesskey																		"T">
+<!ENTITY		menu.help																								"Help">
+<!ENTITY		menu.help.accesskey																			"H">
+<!ENTITY		menu.about																							"About">
+<!ENTITY		menu.about.accesskey																		"A">
+<!ENTITY		menu.expirecountdown.label															'Expires countdown'>
+<!ENTITY		menu.expireprogress.label																'Expires progress bar'>
+<!ENTITY		menu.expireprogress.info																'Visual representative of cookie&#39;s life time.'>
+<!ENTITY		menu.changes																						"Changes log">
+<!ENTITY		menu.changes.accesskey																	"C">
+<!ENTITY		menu.realHost.label																			'Show raw domain'>
+<!ENTITY		menu.autofit.label																			'Auto fit columns'>
+
+<!ENTITY		columnSort.label																				"Sort by">
+<!ENTITY		columnSort.accesskey																		"S">
+<!ENTITY		restoreColumnOrder.label																"Restore Column Order">
+
+<!ENTITY		ascending																								"Ascending">
+<!ENTITY		descending																							"Descending">
+
+<!ENTITY		password.incorrect																			"Incorrect password">
+
+<!ENTITY		options.topmost.label																		'Always on top'>
+<!ENTITY		options.topmost.info																		'The window will stay on top of other "normal" Firefox windows'>
+
+
+<!ENTITY		policy0																									"no information available">
+<!ENTITY		policy1																									"no policy about storing identifiable information">
+<!ENTITY		policy2																									"stores identifiable information without any user consent">
+<!ENTITY		policy3																									"stores identifiable information unless user opts out">
+<!ENTITY		policy4																									"stores identifiable information if user opts in">
+<!ENTITY		policy5																									"does not store identifiable information">
+
+<!ENTITY		status0																									"no information available">
+<!ENTITY		status1																									"The cookie was accepted.">
+<!ENTITY		status2																									"The cookie was accepted but downgraded to a session cookie.">
+<!ENTITY		status3																									"The cookie was not accepted.">
+<!ENTITY		status4																									"The cookie was rejected.">
+<!ENTITY		yesno0																									"No">
+<!ENTITY		yesno1																									"Yes">
+<!ENTITY		multipleSelection																				"multiple values">
+<!ENTITY		empty																										"empty">
+<!ENTITY		stats																										"showing NN of TT, selected SS">
+
+
+<!ENTITY		filter.refresh																					"Refresh">
+<!ENTITY		filter.search																						"Search">
+<!ENTITY		export.file.save																				"Save file as">
+<!ENTITY		n.a																											"n/a">
+<!ENTITY		cookie.Type1																						"Cookie">
+<!ENTITY		cookie.Type2																						"Local storage">
+<!ENTITY		menu.supportSite																				"Support Website">
+<!ENTITY		menu.supportSite.accesskey															"W">
+<!ENTITY		menu.supportEmail																				"Support Email">
+<!ENTITY		menu.supportEmail.accesskey															"e">
+<!ENTITY		loading																									"Please Wait. Loading cookies.">
+<!ENTITY		fields.note																							"Enabling this field might decrease performance.">
+<!ENTITY		readonly.enabled																				"Read only">
+<!ENTITY		readonly.disabled																				"Normal Read/Write">
+<!ENTITY		readonly.info																						"Click to toggle">
+

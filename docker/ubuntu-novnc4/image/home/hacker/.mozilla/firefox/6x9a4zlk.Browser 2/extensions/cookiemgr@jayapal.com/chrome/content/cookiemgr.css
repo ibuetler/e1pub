@@ -1,0 +1,91 @@
+﻿@import url(chrome://global/skin/);
+
+toolbarbutton {
+	-moz-appearance: none;
+	height:28px;
+	border-style:solid outset outset solid ;
+	border-width:0.5px 1px 1px 0.5px;
+	border-color:lightgrey;
+	border-radius:4px 4px 4px 4px;
+	font-size: 1em;
+}
+
+toolbarbutton[disabled] {
+	border-width:0;
+}
+
+toolbarbutton:hover {
+	border-color:navy;
+}
+
+toolbarbutton.copy {
+	list-style-image: url('chrome://cookiemgr/content/icons/copy.ico');
+}
+
+toolbarbutton.filter {
+	list-style-image: url('chrome://cookiemgr/content/icons/filter.ico');
+}
+
+toolbarbutton.xfilter {
+	list-style-image: url('chrome://cookiemgr/content/icons/xfilter.ico');
+}
+
+toolbarbutton.delete, button.delete{
+	list-style-image: url('chrome://cookiemgr/content/icons/delete.ico');
+}
+
+toolbarbutton.add{
+	list-style-image: url('chrome://cookiemgr/content/icons/add.ico');
+}
+
+toolbarbutton.save{
+	list-style-image: url('chrome://cookiemgr/content/icons/save.ico');
+}
+
+toolbarbutton.save[disabled]{
+	list-style-image: url('chrome://cookiemgr/content/icons/save-disabled.ico');
+}
+
+toolbarbutton.cancel{
+	list-style-image: url('chrome://cookiemgr/content/icons/cancel.ico');
+}
+
+toolbarbutton.export{
+	list-style-image: url('chrome://cookiemgr/content/icons/export.ico');
+}
+
+toolbarbutton.refresh{
+	list-style-image: url('chrome://cookiemgr/content/icons/refresh.ico');
+}
+
+toolbarbutton.about{
+	list-style-image: url('chrome://cookiemgr/content/icons/about.ico');
+}
+
+toolbarbutton.import{
+	list-style-image: url('chrome://cookiemgr/content/icons/import.ico');
+}
+
+toolbarbutton.export{
+	list-style-image: url('chrome://cookiemgr/content/icons/export.ico');
+}
+
+toolbarbutton.close{
+	list-style-image: url('chrome://cookiemgr/content/icons/close.ico');
+}
+
+toolbarbutton.feedback{
+	list-style-image: url('chrome://cookiemgr/content/icons/feedback.ico');
+}
+
+toolbarbutton.contribute{
+	list-style-image: url('chrome://cookiemgr/content/icons/contribute.ico');
+}
+
+toolbarbutton.help{
+	list-style-image: url('chrome://cookiemgr/content/icons/help.ico');
+}
+
+textbox.search{
+	width:10em;
+}

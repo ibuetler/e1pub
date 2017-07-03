@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<RDF:Description RDF:about="urn:mozilla:extension:file:">
+		<em:package>content/</em:package>
+		<em:package>locale/</em:package>
+		<em:package>icons/</em:package>
+	</RDF:Description>
+
+	<RDF:Description RDF:about="urn:mozilla:install-manifest">
+		<em:id>cookiemgr@jayapal.com</em:id>
+		<em:name>Advanced Cookie Manager</em:name>
+		<em:version>5.12</em:version>
+		<em:creator>JAYAPAL</em:creator>
+		<em:homepageURL>http://jayapal.8k.com/firefox/</em:homepageURL>
+		<em:iconURL>chrome://cookiemgr/content/CookieMgr.ico</em:iconURL>
+		<em:icon64URL>chrome://cookiemgr/content/CookieMgr64.ico</em:icon64URL>
+		<em:unpack>true</em:unpack>
+		<em:type>2</em:type>
+		<em:localized>
+			<Description>
+				<em:locale>en</em:locale>
+				<em:name>Advanced Cookie Manager</em:name>
+				<em:description>Advanced Cookie Manager: To manage and monitor cookies.</em:description>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>de</em:locale>
+				<em:name>Erweiterte Cookie Manager</em:name>
+				<em:description>Erweiterte Cookie Manager: Zur Verwaltung und Überwachung Cookies.</em:description>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>fr</em:locale>
+				<em:name>Cookie Manager avancée</em:name>
+				<em:description>Cookie Manager avancée: Pour gérer et contrôler les cookies.</em:description>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>it</em:locale>
+				<em:name>Advanced Cookie Manager</em:name>
+				<em:description>Advanced Cookie Manager: Per gestire e monitorare i cookie.</em:description>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>es</em:locale>
+				<em:name>Advanced Cookie Manager</em:name>
+				<em:description>Advanced Cookie Manager: Para gestionar y controlar las cookies.</em:description>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>tr</em:locale>
+				<em:name>Advanced Cookie Manager</em:name>
+				<em:description>Advanced Cookie Manager: Çerezleri yönetmek ve izlemek içindir.</em:description>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>gr</em:locale>
+				<em:name>Advanced Cookie Manager</em:name>
+				<em:description>Advanced Cookie Manager: To manage and monitor cookies.</em:description>
+			</Description>
+		</em:localized>
+		<em:targetApplication RDF:resource="rdf:#$P+cDf3"/>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>4.0</em:minVersion>
+				<em:maxVersion>37.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</RDF:Description>
+</RDF:RDF>

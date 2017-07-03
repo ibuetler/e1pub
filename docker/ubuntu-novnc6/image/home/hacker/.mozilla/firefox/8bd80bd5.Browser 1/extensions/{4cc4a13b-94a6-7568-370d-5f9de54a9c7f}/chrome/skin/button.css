@@ -1,0 +1,13 @@
+
+#ecb-button {
+	list-style-image: url("chrome://emptycachebutton/skin/icon_16x16.png");
+}
+
+[iconsize="small"] #ecb-button {
+	list-style-image: url("chrome://emptycachebutton/skin/icon_16x16.png");
+}
+
+#ecb-button[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"] > #ecb-button {
+	list-style-image: url("chrome://emptycachebutton/skin/icon_32x32.png");
+}

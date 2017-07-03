@@ -1,0 +1,99 @@
+﻿<!-- ITALY -->
+<!-- OPTIONS DIIALOG ITEMS -->
+<!ENTITY options.title "Opzioni di Cookie Manager">
+<!ENTITY options.caption1 "Impostazioni Gestione">
+<!ENTITY options.caption2 "Impostazioni Monitoraggio">
+<!ENTITY options.caption3 "Ripristinare Cookies On Startup">
+<!ENTITY options.confirm.delete "Chiedi conferma eliminazione">
+<!ENTITY options.showexpiredcookies "Mostra cookie scaduti">
+<!ENTITY options.cookiemonitoring.enable "Permetti monitoraggio dei cookie">
+<!ENTITY options.maxnumberofentries_text "Numero massimo di voci da visualizzare nella casella di riepilogo di monitoraggio cookie:">
+
+
+<!-- MAIN DIALOG -->
+<!-- MAIN MENU ITEMS -->
+<!ENTITY main.title "Gestione avanzata dei cookie">
+<!ENTITY main.menu.delete.selected "Elimina tutti i cookies del dominio selezionato">
+<!ENTITY main.menu.delete.all "Elimina tutti i cookies di tutti i domini">
+<!ENTITY main.menu.delete.cookie "Elimina cookie selezionato">
+<!ENTITY main.menu.export.selected "Esporta tutti i cookies del dominio selezionato">
+<!ENTITY main.menu.export.all "Esporta tutti i cookies di tutti i domini">
+<!ENTITY main.menu.refresh "Aggiorna">
+
+<!-- MAIN DIALOG ITEMS -->
+<!ENTITY main.manage.tab "Gestione">
+<!ENTITY main.monitor.tab "Monitoraggio">
+<!ENTITY main.settings.tab "Impostazioni">
+
+<!ENTITY main.groupname.domains "Dominio">
+<!ENTITY main.groupname.cookies "Cookies">
+<!ENTITY main.groupname.details "Dettagli">
+<!ENTITY main.groupname.monitorchanges "Modifiche recenti">
+
+<!ENTITY main.groupname.show "Show">
+<!ENTITY main.groupname.hide "Hide">
+<!ENTITY main.filter.domains.emptytext "By Domain">
+<!ENTITY main.filter.cookies.emptytext "By Cookie Name">
+<!ENTITY main.filter.cookievalue.emptytext "By Cookie Value">
+
+<!ENTITY main.manage.cookies.grouplable.name "Nome">
+<!ENTITY main.manage.cookies.grouplable.value "Valore">
+
+
+<!ENTITY main.monitor.grouplable.time "Data e Ora">
+<!ENTITY main.monitor.grouplable.action "Azione">
+<!ENTITY main.monitor.grouplable.domain "Dominio">
+<!ENTITY main.monitor.grouplable.cookie "Nome cookie">
+
+<!ENTITY main.monitor.button.clearlist "Cancella Elenco">
+
+
+<!ENTITY main.cookiesdetails.time "Data/Ora creazione">
+<!ENTITY main.cookiesdetails.domain "Dominio">
+<!ENTITY main.cookiesdetails.name "Nome">
+<!ENTITY main.cookiesdetails.value "Valore">
+<!ENTITY main.cookiesdetails.path "Percorso">
+<!ENTITY main.cookiesdetails.httponly "httpOnly">
+<!ENTITY main.cookiesdetails.issecure "isSecure">
+<!ENTITY main.cookiesdetails.issession "isSession">
+<!ENTITY main.cookiesdetails.expires "Scade il">
+
+<!ENTITY main.cookiesdetails.expiry.date "Data">
+<!ENTITY main.cookiesdetails.expiry.time "Ora">
+
+
+<!ENTITY main.cookiesdetails.link.addcookie "Aggiungi Cookie">
+<!ENTITY main.cookiesdetails.button.save "Salva">
+<!ENTITY main.cookiesdetails.button.remove "Rimuovi">
+<!ENTITY main.cookiesdetails.button.add "Aggiungi">
+<!ENTITY main.cookiesdetails.button.cancel "Annulla">
+
+<!ENTITY main.buttons.options "Opzioni">
+<!ENTITY main.buttons.refresh "Aggiorna">
+<!ENTITY main.buttons.clearall "Elimina tutti i cookies">
+<!ENTITY main.buttons.import "Importa cookies">
+<!ENTITY main.buttons.export "Esporta cookies">
+<!ENTITY main.buttons.close "Chiudi">
+<!ENTITY main.buttons.minimize "Riduci a icona">
+<!ENTITY main.buttons.about "Informazioni">
+<!ENTITY main.buttons.feedback "Feedback">
+<!ENTITY main.links.contribute "Fai una donazione">
+<!ENTITY main.buttons.help "Help">
+
+
+<!-- FEEDBACK DIALOG -->
+<!ENTITY feedback.title "Feedback">
+<!ENTITY feedback.link.send "Invia feedback">
+<!ENTITY feedback.link.viafacebook "Su Facebook">
+<!ENTITY feedback.link.email "Invia Email">
+<!ENTITY feedback.link.review "Recensisci l'estensione">
+
+<!-- OPTIONS ABOUT ITEMS -->
+<!ENTITY about.title "Informazioni su Cookie Manager">
+<!ENTITY about.link.releasenotes "Note sulla versione">
+<!ENTITY about.link.aboutdeveloper "Informazioni sullo sviluppatore">
+<!ENTITY about.link.facebookpage "Pagina Facebook">
+
+<!ENTITY options.importonstartup.enable "Abilitare ripristino automatico utilizzare di cookie all'avvio">
+<!ENTITY options.importonstartup.filename "File Nome: ">
+<!ENTITY options.importonstartup.deleteallcookies "Cancella tutti i cookie prima di ripristino da backup">

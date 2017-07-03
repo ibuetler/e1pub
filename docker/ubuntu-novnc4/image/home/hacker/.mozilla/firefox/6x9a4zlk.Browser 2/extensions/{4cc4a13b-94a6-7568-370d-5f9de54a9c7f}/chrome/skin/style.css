@@ -1,0 +1,34 @@
+
+#ecb-prefpane {
+	padding: 0;
+}
+
+#ecb-header {
+	padding: 10px 15px;
+	background-color: #FFFFFF;
+	background-image: url(chrome://emptycachebutton/skin/icon_16x16.png);
+	background-position: 10px 13px;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #b0bdcc;
+}
+
+#ecb-header text {
+	padding: 0 0 0 18px;
+	font-size: 14px;
+}
+
+#ecb-wrapper {
+	padding: 5px 10px;
+}
+
+#ecb-wrapper caption {
+	padding: 0 2px;
+}
+
+#ecb-types {
+	width: 160px;
+}
+
+#ecb-notif {
+	width: 160px;
+}
