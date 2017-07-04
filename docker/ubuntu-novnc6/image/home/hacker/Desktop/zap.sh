@@ -1,1 +1,0 @@
-/opt/applic/zaproxy/zap.sh
