@@ -1,0 +1,97 @@
+﻿<!-- ENGLISH -->
+<!-- OPTIONS DIIALOG ITEMS -->
+<!ENTITY options.title "Cookie Manager Options">
+<!ENTITY options.caption1 "Cookie Manager Settings">
+<!ENTITY options.caption2 "Cookie Monitoring Settings">
+<!ENTITY options.caption3 "Restore Cookies On Startup">
+<!ENTITY options.confirm.delete "Show confirmation dialog on delete">
+<!ENTITY options.showexpiredcookies "Show expired cookies">
+<!ENTITY options.cookiemonitoring.enable "Enable cookie monitoring">
+<!ENTITY options.maxnumberofentries_text "Maximum number of entries to show in cookie monitoring list box: ">
+
+<!-- MAIN DIALOG -->
+<!-- MAIN MENU ITEMS -->
+<!ENTITY main.title "Advanced Cookie Manager">
+<!ENTITY main.menu.delete.selected "Delete all cookies from selected domain(s)">
+<!ENTITY main.menu.delete.all "Delete all cookies from all domains">
+<!ENTITY main.menu.delete.cookie "Delete Cookie(s)">
+<!ENTITY main.menu.export.selected "Export all cookies from selected domain(s)">
+<!ENTITY main.menu.export.all "Export all cookies from all domains">
+<!ENTITY main.menu.refresh "Refresh">
+
+<!-- MAIN DIALOG ITEMS -->
+<!ENTITY main.manage.tab "Manage Cookies">
+<!ENTITY main.monitor.tab "Monitor Cookies">
+<!ENTITY main.settings.tab "Settings">
+
+
+<!ENTITY main.groupname.domains "Domains">
+<!ENTITY main.groupname.cookies "Cookies">
+<!ENTITY main.groupname.details "Cookie Details">
+<!ENTITY main.groupname.monitorchanges "Latest Cookie Changes">
+
+<!ENTITY main.groupname.show "Show">
+<!ENTITY main.groupname.hide "Hide">
+<!ENTITY main.filter.domains.emptytext "By Domain">
+<!ENTITY main.filter.cookies.emptytext "By Cookie Name">
+<!ENTITY main.filter.cookievalue.emptytext "By Cookie Value">
+
+<!ENTITY main.manage.cookies.grouplable.name "Name">
+<!ENTITY main.manage.cookies.grouplable.value "Value">
+
+
+<!ENTITY main.monitor.grouplable.time "Time">
+<!ENTITY main.monitor.grouplable.action "Action">
+<!ENTITY main.monitor.grouplable.domain "Domain">
+<!ENTITY main.monitor.grouplable.cookie "Cookie Name">
+
+<!ENTITY main.monitor.button.clearlist "Clear List">
+
+
+<!ENTITY main.cookiesdetails.time "Creation Time">
+<!ENTITY main.cookiesdetails.domain "Domain">
+<!ENTITY main.cookiesdetails.name "Name">
+<!ENTITY main.cookiesdetails.value "Value">
+<!ENTITY main.cookiesdetails.path "Path">
+<!ENTITY main.cookiesdetails.httponly "httpOnly">
+<!ENTITY main.cookiesdetails.issecure "isSecure">
+<!ENTITY main.cookiesdetails.issession "isSession">
+<!ENTITY main.cookiesdetails.expires "Expires on">
+
+<!ENTITY main.cookiesdetails.expiry.date "Date">
+<!ENTITY main.cookiesdetails.expiry.time "Time">
+
+<!ENTITY main.cookiesdetails.link.addcookie "Add Cookie">
+<!ENTITY main.cookiesdetails.button.save "Save">
+<!ENTITY main.cookiesdetails.button.remove "Remove">
+<!ENTITY main.cookiesdetails.button.add "Add">
+<!ENTITY main.cookiesdetails.button.cancel "Cancel">
+
+<!ENTITY main.buttons.options "Options">
+<!ENTITY main.buttons.refresh "Refresh">
+<!ENTITY main.buttons.clearall "Clear All Cookies">
+<!ENTITY main.buttons.import "Import">
+<!ENTITY main.buttons.export "Export">
+<!ENTITY main.buttons.close "Close">
+<!ENTITY main.buttons.minimize "Minimize">
+<!ENTITY main.buttons.about "About">
+<!ENTITY main.buttons.feedback "Feedback">
+<!ENTITY main.links.contribute "Contribute">
+<!ENTITY main.buttons.help "Help">
+
+<!-- FEEDBACK DIALOG -->
+<!ENTITY feedback.title "Feedback">
+<!ENTITY feedback.link.send "Send Feedback">
+<!ENTITY feedback.link.viafacebook "Via Facebook wall">
+<!ENTITY feedback.link.email "Via Email">
+<!ENTITY feedback.link.review "Via Addon Review">
+
+<!-- OPTIONS ABOUT ITEMS -->
+<!ENTITY about.title "About Cookie Manager">
+<!ENTITY about.link.releasenotes "Release Notes">
+<!ENTITY about.link.aboutdeveloper "About Developer">
+<!ENTITY about.link.facebookpage "Facebook Page">
+
+<!ENTITY options.importonstartup.enable "Enable automatic restore of cookies on startup">
+<!ENTITY options.importonstartup.filename "File Name: ">
+<!ENTITY options.importonstartup.deleteallcookies "Delete all cookies before restoring from backup">

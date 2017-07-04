@@ -1,0 +1,13 @@
+content cookiemgr chrome/content/
+icons cookiemgr chrome/icons/default
+locale cookiemgr en chrome/locale/en-US/cookiemgr.dtd
+locale cookiemgr en-US chrome/locale/en-US/cookiemgr.dtd
+locale cookiemgr el chrome/locale/el-GR/cookiemgr.dtd
+locale cookiemgr es chrome/locale/es-ES/cookiemgr.dtd
+locale cookiemgr it chrome/locale/it-IT/cookiemgr.dtd
+locale cookiemgr de chrome/locale/de-DE/cookiemgr.dtd
+locale cookiemgr fr chrome/locale/fr-FR/cookiemgr.dtd
+locale cookiemgr tr chrome/locale/tr-TR/cookiemgr.dtd
+
+
+overlay chrome://browser/content/browser.xul chrome://cookiemgr/content/menu.xul

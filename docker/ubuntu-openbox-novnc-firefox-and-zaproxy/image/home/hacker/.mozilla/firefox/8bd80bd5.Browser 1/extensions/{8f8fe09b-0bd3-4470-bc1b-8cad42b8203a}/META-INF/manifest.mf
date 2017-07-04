@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 4v7dvTIULg9J6xUwX82GKA==
+SHA1-Digest: j8G6XH0UXVmQWDHLzDqToH06Ej0=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: iTospr5zh5fciwur2yZbBQ==
+SHA1-Digest: g7+kePpe2Mzm8mYYyCW3AjQ6s9Q=
+
+Name: install.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: KWKhgwTEulRGMCNj49E5RQ==
+SHA1-Digest: oHHABxsjBkhX/RFqwPesglBYiZc=
+
+Name: TODO.txt
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: +kWMRYxyvBvPYB0n0uVJ0w==
+SHA1-Digest: MmOzwoagozA74ySSf8VcAppASDc=
+
+Name: chrome/livehttpheaders.jar
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wC739f4gNbcdcYNdqkvghA==
+SHA1-Digest: mJ7vm4dtcypu1DnWLZLV8ZLnRU0=
+
+Name: chrome/icons/default/LiveHTTPHeaders.ico
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: DsIocY/86D37g/aRsYC0dg==
+SHA1-Digest: lmM7T8Q8Pvu6UfQpTx4l9o37ho4=
+
+Name: chrome/icons/default/LiveHTTPHeaders.xpm
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: nTzP7gcgfXjSTZXHivKmyA==
+SHA1-Digest: dKUwmegrZKcC2pAIsOHj8u/LDxo=
+
+Name: components/nsHeaderInfo.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: m8cnw/bfNXqeg5pY1cDbQg==
+SHA1-Digest: I4OPvb1qgfCFCi8urrLRdv4H7/M=
+
+Name: defaults/preferences/prefs.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wSqANEq9E0GsT1pHuwBbBg==
+SHA1-Digest: sY12D9QXyZCaikC2kxk9IJcHl8w=
+

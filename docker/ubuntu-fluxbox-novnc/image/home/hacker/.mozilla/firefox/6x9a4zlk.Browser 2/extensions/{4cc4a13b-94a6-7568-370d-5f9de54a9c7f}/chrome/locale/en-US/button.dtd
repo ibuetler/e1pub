@@ -1,0 +1,8 @@
+<!ENTITY button.emptynow "Empty Cache">
+<!ENTITY button.tooltip "Click this button to empty your cache.">
+<!ENTITY button.all "Empty All Cache">
+<!ENTITY button.disk "Empty Disk Cache">
+<!ENTITY button.memory "Empty Memory Cache">
+<!ENTITY button.offline "Empty Offline Cache">
+<!ENTITY button.favicon "Empty Favicon Cache">
+<!ENTITY button.options "Options">

@@ -1,0 +1,11 @@
+<!ENTITY	cookiesmanagerplus.label							"Cookies Manager+">
+<!ENTITY	cookiesmanagerplus.accesskey					"E">
+<!ENTITY	cookiesmanagerplus.site								"Search">
+<!ENTITY	cookiesmanagerplus.site.tooltip				"Show cookies matching currently opened domain">
+<!ENTITY	cookiesmanagerplus.site.accesskey			"S">
+<!ENTITY	cookiesmanagerplus.updated						"{old} updated to {new}">
+<!ENTITY	cookiesmanagerplus.changesLog					"Changes Log">
+<!ENTITY	cookiesmanagerplus.changesLog_key			"L">
+<!ENTITY	cookiesmanagerplus.menu_options				"Options">
+<!ENTITY	cookiesmanagerplus.menu_options_key		"O">
+<!ENTITY	cookiesmanagerplus.na									"N/A"> <!--unknown-->

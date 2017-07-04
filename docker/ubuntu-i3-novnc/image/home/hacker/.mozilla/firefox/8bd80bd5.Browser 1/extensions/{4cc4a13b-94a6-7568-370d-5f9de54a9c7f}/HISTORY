@@ -1,0 +1,82 @@
+HISTORY.txt
+
+Version 2.7:
+- FX32 compatibility to new API (HTTP Cache v2)
+- Custom about dialogue removed (now generated automatically by Firefox)
+- Offline and favicon cache options disabled
+
+Version 2.6:
+- australis icon fix
+
+Version 2.5:
+- auto clear fix attempt #1
+- refresh changed to reload (to be consistent with fx)
+
+Version 2.4:
+- 2.3 bug fix release
+
+Version 2.3:
+- new feature: auto clean on % of max allowed size
+- major design changes
+- clean up
+
+Version 2.2:
+- image cache service update to new api (>=ff 18)
+
+Version 2.1:
+- new feature: right click context menu
+
+Version 2.0:
+- rewritten main js file
+- fixed texts across the extension
+- added LICENSE to extension root
+- new feature: F9 shortcut (i chose f9 to keep it compatible with the other addons out there)
+- new feature: the button now automatically adds itself to a toolbar on install
+
+Version 1.9
+- fixed notification issues on mac in some cases
+- added a message that growl is needed on mac
+
+Version 1.8
+- more ff4 and osx compatibility
+
+Version 1.7
+- after user complain icon changed to eraser again, but another one now. if any designer wants to make an icon, please do so.
+
+Version 1.6
+- new feature "first run"
+
+Version 1.5
+- New dialogs
+- New preference to reload all tabs
+- Image cache renamed to Favicon cache for better understanding
+- Lots of cleaning up
+- Got rid of .jar
+
+Version 1.4
+- ff 4.0 compatibility fix
+- new icons
+
+Version 1.3
+- complete rewrite of the add-on
+- ability to turn on "reload page after clearing cache", notifications, ...
+- ability to select type of cache to be removed
+- localization files ready for translators, localization fixed
+- everything cleaned up and restructured (code)
+
+Version 1.2
+- preferences dialog so notification baloon can be turned off
+- new icon (and fixed so it fits correcty into toolbar)
+- some other minor fixes
+
+Version 1.1
+- firefox 3.6.2 fix
+
+Version 1.0
+- clear cache button project import
+- firefox 3.6 fix
+
+IMPORTANT:
+This add-on was a fork of "Clear Cache Button" by Christopher Waltz (to version 1.2). 
+It started as compatibility fix for Firefox 3.6 but ended as a new addon, rewritten from scratch and polished. 
+You can also set some advanced options and turn on/off notifications.
