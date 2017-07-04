@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://emptycachebutton/skin/style.css" type="text/css"?>
+
+<!DOCTYPE prefwindow SYSTEM "chrome://emptycachebutton/locale/options.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&preferences.title;" id="ecb-prefwin">
+	<prefpane id="ecb-prefpane">
+		
+		<preferences>
+			<preference id="ecb-pref-memory" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.removeMemoryCache" type="bool" />
+			<preference id="ecb-pref-disk" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.removeDiskCache" type="bool" />
+			<preference id="ecb-pref-offline" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.removeOfflineCache" type="bool" />
+			<preference id="ecb-pref-favicon" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.removeImageCache" type="bool" />
+			<preference id="ecb-pref-shownotif" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.showNotification" type="bool" />
+			<preference id="ecb-pref-afterclr" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.doAfterClear" type="int" />
+			<preference id="ecb-pref-autoclear" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.autoClearEnable" type="bool" />
+			<preference id="ecb-pref-autopercent" name="extensions.{4cc4a13b-94a6-7568-370d-5f9de54a9c7f}.autoClearPercent" type="int" />
+		</preferences>
+		
+		<box id="ecb-header">
+			<text value="Empty Cache Button" />
+		</box>
+		
+		<box orient="vertical" id="ecb-wrapper">
+			
+			<box orient="horizontal">
+				<groupbox id="ecb-types">
+					<caption label="&preferences.cachetype;" />
+					<checkbox preference="ecb-pref-disk" label="&preferences.disk;" />
+					<checkbox preference="ecb-pref-memory" label="&preferences.memory;" />
+					<checkbox preference="ecb-pref-offline" label="&preferences.offline;" disabled="true" />
+					<checkbox preference="ecb-pref-favicon" label="&preferences.favicon;" disabled="true" />
+				</groupbox>
+				<groupbox id="ecb-notif">
+					<caption label="&preferences.onsuccess;" />
+					<radiogroup preference="ecb-pref-afterclr">
+						<radio value="1" label="&preferences.norefresh;" />
+						<radio value="2" label="&preferences.activetab;"/>
+						<radio value="3" label="&preferences.alltabs;" />
+					</radiogroup>
+					<checkbox preference="ecb-pref-shownotif" label="&preferences.showbubble;" />
+				</groupbox>
+			</box>
+		
+		</box>
+		
+	</prefpane>
+</prefwindow>
