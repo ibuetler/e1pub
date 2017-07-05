@@ -1,0 +1,13 @@
+<!ENTITY preferences.title "Options">
+<!ENTITY preferences.cachetype "Cache types:">
+<!ENTITY preferences.memory "Memory cache">
+<!ENTITY preferences.disk "Disk cache">
+<!ENTITY preferences.offline "Offline cache">
+<!ENTITY preferences.favicon "Favicon cache">
+<!ENTITY preferences.norefresh "No refresh">
+<!ENTITY preferences.activetab "Reload active tab">
+<!ENTITY preferences.alltabs "Reload all tabs">
+<!ENTITY preferences.onsuccess "On success:">
+<!ENTITY preferences.showbubble "Show notification">
+<!ENTITY preferences.autoclear "Clear automatically:">
+<!ENTITY preferences.autolimit "Run when cache usage reaches:">

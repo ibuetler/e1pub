@@ -1,0 +1,97 @@
+﻿<!-- TURKISH -->
+<!-- OPTIONS DIIALOG ITEMS -->
+<!ENTITY options.title "Cookie Manager Seçenekleri">
+<!ENTITY options.caption1 "Cookie Manager Ayarları">
+<!ENTITY options.caption2 "Çerez İzleme Ayarları">
+<!ENTITY options.caption3 "Başlangıçta Çerezleri Geri Yükle">
+<!ENTITY options.confirm.delete "Silme onayı iletişim kutusunu göster">
+<!ENTITY options.showexpiredcookies "Süresi dolmuş çerezleri göster">
+<!ENTITY options.cookiemonitoring.enable "Çerez izlemeyi etkinleştir">
+<!ENTITY options.maxnumberofentries_text "Çerez izleme liste kutusunda gösterilecek maximum giriş sayısı: ">
+
+<!-- MAIN DIALOG -->
+<!-- MAIN MENU ITEMS -->
+<!ENTITY main.title "Advanced Cookie Manager">
+<!ENTITY main.menu.delete.selected "Seçilen alan adından (domain) tüm çerezleri sil">
+<!ENTITY main.menu.delete.all "Tüm alan adlarından (domainler) tüm çerezleri sil">
+<!ENTITY main.menu.delete.cookie "Çerezi(leri) Sil">
+<!ENTITY main.menu.export.selected "Seçilen alan adından (domain) tüm çerezleri dışa aktar">
+<!ENTITY main.menu.export.all "Tüm alan adlarından (domainler) tüm çerezleri dışa aktar">
+<!ENTITY main.menu.refresh "Yenile">
+
+<!-- MAIN DIALOG ITEMS -->
+<!ENTITY main.manage.tab "Çerezleri Yönet">
+<!ENTITY main.monitor.tab "Çerezleri İzle">
+<!ENTITY main.settings.tab "Ayarlar">
+
+
+<!ENTITY main.groupname.domains "Alan Adları (Domainler)">
+<!ENTITY main.groupname.cookies "Çerezler">
+<!ENTITY main.groupname.details "Çerez Ayrıntıları">
+<!ENTITY main.groupname.monitorchanges "Son Çerez Değişiklikleri">
+
+<!ENTITY main.groupname.show "Show">
+<!ENTITY main.groupname.hide "Hide">
+<!ENTITY main.filter.domains.emptytext "By Domain">
+<!ENTITY main.filter.cookies.emptytext "By Cookie Name">
+<!ENTITY main.filter.cookievalue.emptytext "By Cookie Value">
+
+<!ENTITY main.manage.cookies.grouplable.name "İsim">
+<!ENTITY main.manage.cookies.grouplable.value "Değer">
+
+
+<!ENTITY main.monitor.grouplable.time "Zaman">
+<!ENTITY main.monitor.grouplable.action "Hareket">
+<!ENTITY main.monitor.grouplable.domain "Alan Adı (Domain)">
+<!ENTITY main.monitor.grouplable.cookie "Çerez Adı">
+
+<!ENTITY main.monitor.button.clearlist "Listeyi Temizle">
+
+
+<!ENTITY main.cookiesdetails.time "Oluşturulma Zamanı">
+<!ENTITY main.cookiesdetails.domain "Alan Adı (Domain)">
+<!ENTITY main.cookiesdetails.name "İsim">
+<!ENTITY main.cookiesdetails.value "Değer">
+<!ENTITY main.cookiesdetails.path "Yol">
+<!ENTITY main.cookiesdetails.httponly "Sadece http">
+<!ENTITY main.cookiesdetails.issecure "Güvenlidir">
+<!ENTITY main.cookiesdetails.issession "Oturumdur">
+<!ENTITY main.cookiesdetails.expires "Sona erme zamanı">
+
+<!ENTITY main.cookiesdetails.expiry.date "Tarih">
+<!ENTITY main.cookiesdetails.expiry.time "Zaman">
+
+<!ENTITY main.cookiesdetails.link.addcookie "Çerez Ekle">
+<!ENTITY main.cookiesdetails.button.save "Kaydet">
+<!ENTITY main.cookiesdetails.button.remove "Kaldır">
+<!ENTITY main.cookiesdetails.button.add "Ekle">
+<!ENTITY main.cookiesdetails.button.cancel "İptal">
+
+<!ENTITY main.buttons.options "Seçenekler">
+<!ENTITY main.buttons.refresh "Yenile">
+<!ENTITY main.buttons.clearall "Tüm Çerezleri Temizle">
+<!ENTITY main.buttons.import "İçe Aktar">
+<!ENTITY main.buttons.export "Dışa Aktar">
+<!ENTITY main.buttons.close "Kapat">
+<!ENTITY main.buttons.minimize "Küçült">
+<!ENTITY main.buttons.about "Hakkında">
+<!ENTITY main.buttons.feedback "Geri Bildirim">
+<!ENTITY main.links.contribute "Bağış Yap">
+<!ENTITY main.buttons.help "Yardım">
+
+<!-- FEEDBACK DIALOG -->
+<!ENTITY feedback.title "Geri Bildirim">
+<!ENTITY feedback.link.send "Geri Bildirim Gönder">
+<!ENTITY feedback.link.viafacebook "Facebook duvarı ile">
+<!ENTITY feedback.link.email "Email ile">
+<!ENTITY feedback.link.review "Eklenti İncelemesi ile">
+
+<!-- OPTIONS ABOUT ITEMS -->
+<!ENTITY about.title "Cookie Manager Hakkında">
+<!ENTITY about.link.releasenotes "Sürüm Notları">
+<!ENTITY about.link.aboutdeveloper "Geliştirici Hakkında">
+<!ENTITY about.link.facebookpage "Facebook Sayfası">
+
+<!ENTITY options.importonstartup.enable "Başlangıçta çerezleri otomatik geri yüklemeyi etkinleştir">
+<!ENTITY options.importonstartup.filename "Dosya Adı: ">
+<!ENTITY options.importonstartup.deleteallcookies "Yedekten geri yüklemeden önce tüm çerezleri sil">

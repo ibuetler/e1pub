@@ -1,0 +1,98 @@
+﻿<!-- GERMAN -->
+<!-- OPTIONS DIIALOG ITEMS -->
+<!ENTITY options.title "Cookie Manager Optionen">
+<!ENTITY options.caption1 "Cookie Manager Einstellungen">
+<!ENTITY options.caption2 "Cookie überwachen Einstellungen">
+<!ENTITY options.caption3 "Wiederherstellen Cookies Auf Startup">
+<!ENTITY options.confirm.delete "Bestätigungsdialog vor dem Löschen anzeigen">
+<!ENTITY options.showexpiredcookies "Zeige abgelaufene Cookies">
+<!ENTITY options.maxnumberofentries_text "Maximale Anzahl der Einträge in der Liste:">
+<!ENTITY options.cookiemonitoring.enable "Cookie-Überwachung aktivieren">
+
+<!-- MAIN DIALOG -->
+<!-- MAIN MENU ITEMS -->
+<!ENTITY main.title "Erweiterter Cookie Manager">
+<!ENTITY main.menu.delete.selected "Löschen Sie alle Cookies der ausgewählten Domäne">
+<!ENTITY main.menu.delete.all "Lösche alle Cookies von allen Domänen">
+<!ENTITY main.menu.delete.cookie "Cookies löschen">
+<!ENTITY main.menu.export.selected "Alle Cookies der ausgewählten Domäne exportieren">
+<!ENTITY main.menu.export.all "Alle Cookies aller Domänen exportieren">
+<!ENTITY main.menu.refresh "Neu laden">
+
+<!-- MAIN DIALOG ITEMS -->
+<!ENTITY main.manage.tab "Cookies verwalten">
+<!ENTITY main.monitor.tab "Cookies überwachen">
+<!ENTITY main.settings.tab "Optionen">
+
+
+<!ENTITY main.groupname.domains "Domänen">
+<!ENTITY main.groupname.cookies "Cookies">
+<!ENTITY main.groupname.details "Cookie Details">
+<!ENTITY main.groupname.monitorchanges "Neueste Änderungen">
+
+<!ENTITY main.groupname.show "Show">
+<!ENTITY main.groupname.hide "Hide">
+<!ENTITY main.filter.domains.emptytext "By Domain">
+<!ENTITY main.filter.cookies.emptytext "By Cookie Name">
+<!ENTITY main.filter.cookievalue.emptytext "By Cookie Value">
+
+<!ENTITY main.manage.cookies.grouplable.name "Name">
+<!ENTITY main.manage.cookies.grouplable.value "Wert">
+
+
+<!ENTITY main.monitor.grouplable.time "Uhrzeit">
+<!ENTITY main.monitor.grouplable.action "Aktion">
+<!ENTITY main.monitor.grouplable.domain "Domäne">
+<!ENTITY main.monitor.grouplable.cookie "Cookie Name">
+
+<!ENTITY main.monitor.button.clearlist "Liste löschen">
+
+
+<!ENTITY main.cookiesdetails.time "Erstellungszeit">
+<!ENTITY main.cookiesdetails.domain "Domäne">
+<!ENTITY main.cookiesdetails.name "Name">
+<!ENTITY main.cookiesdetails.value "Wert">
+<!ENTITY main.cookiesdetails.path "Pfad">
+<!ENTITY main.cookiesdetails.httponly "httpOnly">
+<!ENTITY main.cookiesdetails.issecure "isSecure">
+<!ENTITY main.cookiesdetails.issession "isSession">
+<!ENTITY main.cookiesdetails.expires "Verfällt am">
+
+<!ENTITY main.cookiesdetails.expiry.date "Datum">
+<!ENTITY main.cookiesdetails.expiry.time "Zeit">
+
+<!ENTITY main.cookiesdetails.link.addcookie "Cookie hinzufügen">
+<!ENTITY main.cookiesdetails.button.save "Speichern">
+<!ENTITY main.cookiesdetails.button.remove "Entfernen">
+<!ENTITY main.cookiesdetails.button.add "Hinzufügen">
+<!ENTITY main.cookiesdetails.button.cancel "Abbrechen">
+
+<!ENTITY main.buttons.options "Optionen">
+<!ENTITY main.buttons.refresh "Neu laden">
+<!ENTITY main.buttons.clearall "Alle Cookies löschen">
+<!ENTITY main.buttons.import "Importieren">
+<!ENTITY main.buttons.export "Exportieren">
+<!ENTITY main.buttons.close "Schließen">
+<!ENTITY main.buttons.minimize "Minimieren">
+<!ENTITY main.buttons.about "Über">
+<!ENTITY main.buttons.feedback "Kontakt">
+<!ENTITY main.links.contribute "Einen Beitrag leisten">
+<!ENTITY main.buttons.help "Help">
+
+
+<!-- FEEDBACK DIALOG -->
+<!ENTITY feedback.title "Kontakt">
+<!ENTITY feedback.link.send "Feedback senden">
+<!ENTITY feedback.link.viafacebook "Via Facebook-Pinnwand">
+<!ENTITY feedback.link.email "Via Email">
+<!ENTITY feedback.link.review "Via Addon Bewertung">
+
+<!-- OPTIONS ABOUT ITEMS -->
+<!ENTITY about.title "Über Cookie Manager">
+<!ENTITY about.link.releasenotes "Anmerkungen zur Version">
+<!ENTITY about.link.aboutdeveloper "Über den Entwickler">
+<!ENTITY about.link.facebookpage "Facebook Seite">
+
+<!ENTITY options.importonstartup.enable "Aktivieren Sie die automatische Restore von Cookies auf Start">
+<!ENTITY options.importonstartup.filename "File Name: ">
+<!ENTITY options.importonstartup.deleteallcookies "Löschen Sie alle Cookies, bevor aus dem Backup wiederherstellen">

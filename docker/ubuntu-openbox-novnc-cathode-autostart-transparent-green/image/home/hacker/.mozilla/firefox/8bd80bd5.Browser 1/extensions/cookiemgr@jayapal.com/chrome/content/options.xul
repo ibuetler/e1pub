@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>   
+<!DOCTYPE prefwindow SYSTEM "chrome://cookiemgr/locale/cookiemgr.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    title="&options.title;"
+    modal="yes"
+    id="CookieMgr"
+    instantApply="false"
+>
+  <prefpane>
+    <preferences>
+		<!-- cookie manager settings -->
+		<preference id="pref-confirm-delete" name="extensions.cookiemgr.confirm-delete" type="bool" instantApply="true"/>
+		<preference id="pref-show-expired-cookies" name="extensions.cookiemgr.show-expired-cookies" type="bool" instantApply="true"/>
+
+		<!-- cookie monitor settings -->
+		<preference id="pref-monitoring-enabled" name="extensions.cookiemgr.monitoring-enabled" type="bool" instantApply="true"/>
+		<preference id="pref-monitoring-list-size" name="extensions.cookiemgr.monitoring-list-size" type="int" instantApply="true"/>
+	  
+		<!-- cookie auto import settings -->
+		<preference id="pref-import-onstartup" name="extensions.cookiemgr.import.onstartup" type="bool" instantApply="true"/>
+		<preference id="pref-import-onstartup-filename" name="extensions.cookiemgr.import.onstartup.filename" type="string" instantApply="true"/>
+		<preference id="pref-import-onstartup-deleteallcookies" name="extensions.cookiemgr.import.onstartup.delete-all-cookies" type="bool"  instantApply="true"/>
+    </preferences>
+
+    <groupbox flex="1">
+    <caption label="&options.caption1;"  style="font-weight:bold;"/>
+        <grid flex="5">
+            <columns><column/><column flex="10" /><column/></columns>
+            <rows>
+                <row>
+                    <checkbox label="&options.confirm.delete;" preference="pref-confirm-delete"/>
+                </row>
+                <row>
+                    <checkbox label="&options.showexpiredcookies;" preference="pref-show-expired-cookies"/>
+                </row>
+            </rows>
+        </grid>
+    </groupbox>
+    
+    <groupbox flex="1">
+    <caption label="&options.caption2;"  style="font-weight:bold;"/>
+        <grid flex="5">
+            <columns><column/><column flex="10" /><column/></columns>
+            <rows>
+                <row>
+                      <checkbox label="&options.cookiemonitoring.enable;" preference="pref-monitoring-enabled"/>
+                </row>
+                <row>
+                    <p align="center">
+                        <label value="&options.maxnumberofentries_text;" /> <textbox preference="pref-monitoring-list-size" type="number" size="3" style="min-width:3em"/>
+                    </p>
+                </row>
+            </rows>
+        </grid>
+    </groupbox>
+    
+  </prefpane>
+<script type="application/x-javascript" src="chrome://cookiemgr/content/dialog.js"/>
+
+</prefwindow>

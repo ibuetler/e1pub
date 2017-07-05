@@ -1,0 +1,818 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#cookieInfoBox
+{
+}
+#cookiesTree
+{
+	min-height: 7em;
+	margin-bottom: 5px;
+}
+#cookiesTree treecol:not([type="checkbox"])
+{
+	min-width: 3em;
+}
+#cookiesTree treecol#rawHost,
+#cookiesTree treecol#name,
+#cookiesTree treecol#content
+{
+	min-width: 4em;
+}
+
+#loadingCount,
+#expireProgressText[progress="true"]
+{
+	text-shadow: 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog
+}
+#loadingCount,
+#expireProgressText[progress="true"]:-moz-system-metric(windows-classic)
+{
+	text-shadow: 0 0 0.5em -moz-Dialog, 0 0 0.5em -moz-Dialog, 0 0 0.5em -moz-Dialog, 0 0 0.5em -moz-Dialog, 0 0 0.5em -moz-Dialog, 0 0 0.5em -moz-Dialog, 0 0 0.5em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog, 0 0 0.2em -moz-Dialog
+}
+#expireProgressText
+{
+	color: -moz-FieldText;
+	font-style: italic;
+}
+
+#loadingCount
+{
+	color: -moz-FieldText;
+	text-align: center;
+}
+#ifl_expires[expired="true"]:not([multi="true"]):not([empty="true"]),
+#expireProgressText[expired="true"]
+{
+	color: red;
+}
+#expireProgress[expired="true"]
+{
+	display: none;
+}
+/*
+progressmeter[text="true"] .progress-bar
+{
+	opacity: 1.0;
+}
+*/
+
+progressmeter
+{
+	min-width: 0;
+	margin: 2px -3px 2px -3px;
+}
+
+progressmeter:-moz-system-metric(windows-classic)
+{
+	margin: 0 -3px 0 -3px;
+}
+
+row[dragable="true"] > .dragme,
+row[dragable="true"] > .dragme label
+{
+	cursor: -moz-grab;
+}
+row[dragable="true"]
+{
+	border-top: 1px dotted #e1e1e1;
+	margin: 0 2px 0 2px;
+}
+row[dragable="true"][last="true"]
+{
+	border-bottom: 1px dotted transparent;
+	margin: 0 2px 0 2px;
+}
+row[dragable="true"][first="true"]
+{
+	border-top-color: transparent;
+}
+row[dragable="true"][dragover="true"][dragupdown="up"]
+{
+	border-top: 1px solid black;
+}
+#row_end[dragover="true"],
+row[dragable="true"][dragover="true"][dragupdown="down"]
+{
+	border-bottom: 1px solid black;
+}
+
+#row_end
+{
+	height: 0;
+	border-bottom: 1px dotted transparent;
+	margin: 0 2px 0 2px;
+}
+
+#cookiesTree treechildren::-moz-tree-row(even)
+{
+	background-color: white;
+}
+#cookiesTree treechildren::-moz-tree-row(odd)
+{
+	background-color: #F5F5F5;
+}
+/*
+#cookiesTree treechildren::-moz-tree-row(odd, selected) {
+	background-color: #E7E7E7;
+}
+#cookiesTree treechildren::-moz-tree-row(even, selected) {
+	background-color: #E0E0E0;
+}
+*/
+
+	/* css for checked cells */
+/*
+#cookiesTree treechildren::-moz-tree-checkbox
+{
+	margin: 1px 3px;
+	-moz-box-align: center;
+	border: 2px solid;
+	-moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
+	-moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
+	-moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
+	-moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+	background: -moz-Field no-repeat 50% 50%;
+}
+#cookiesTree treechildren:-moz-system-metric(windows-classic)::-moz-tree-checkbox,
+#cookiesTree treechildren[xp="true"]::-moz-tree-checkbox
+{
+	margin: 1px 0px;
+}
+#cookiesTree treechildren::-moz-tree-checkbox(checked)
+{
+	list-style-image: url("chrome://global/skin/checkbox/cbox-check.gif");
+
+}
+*/
+
+#cookiesTree treecol[type="checkbox"] > label
+{
+	display: none;
+}
+
+/*
+#cookiesTree treecol[type="checkbox"] > label
+{
+	display: block;
+	-moz-appearance: checkbox;
+}
+*/
+
+#cookiesTree treecol[type="checkbox"] > image,
+#cookiesTree treechildren::-moz-tree-checkbox {
+	list-style-image: url("images/icons.png");
+	-moz-image-region: rect(0, 78px, 14px, 64px);
+}
+
+#cookiesTree treecol[type="checkbox"][checked="2"] > image
+{
+	-moz-image-region: rect(0, 327px, 14px, 313px);
+}
+
+#cookiesTree treecol[type="checkbox"][checked="3"] > image,
+#cookiesTree treechildren::-moz-tree-checkbox(checked) {
+	-moz-image-region: rect(0, 91px, 14px, 77px);
+}
+
+#cookiesTree treechildren::-moz-tree-checkbox(protected) {
+	-moz-image-region: rect(0, 104px, 14px, 90px);
+}
+
+#cookiesTree treechildren::-moz-tree-checkbox(checked, protected) {
+	-moz-image-region: rect(0, 117px, 14px, 103px);
+}
+
+
+#cookiesTree treechildren::-moz-tree-cell-text()
+{
+	color: black;
+}
+
+#cookiesTree treechildren::-moz-tree-cell-text()
+{
+	color: black;
+}
+
+#cookiesTree treechildren::-moz-tree-cell-text(selected),
+#cookiesTree treechildren::-moz-tree-cell-text(selected, odd)
+{
+	color: white;
+}
+#cookiesTree treechildren::-moz-tree-cell-text(updated)
+{
+	color: green;
+}
+
+#cookiesTree treechildren::-moz-tree-cell-text(expired)
+{
+	text-decoration: line-through;
+	color: red;
+}
+#cookiesTree treechildren::-moz-tree-cell-text(protected)
+{
+	font-style: italic;
+	color: GrayText;
+}
+#cookiesTree treechildren::-moz-tree-cell-text(expired, protected)
+{
+	color: brown;
+}
+/*
+#cookiesTree treechildren::-moz-tree-cell-text(selected, expired)
+{
+	color: #FF5B5B;
+}
+*/
+/*#cookiesTree treechildren::-moz-tree-cell-text(selected, expired, focus)*/
+#cookiesTree treechildren::-moz-tree-cell-text(selected, expired)
+{
+	color: pink;
+}
+/*
+#cookiesTree treechildren::-moz-tree-cell-text(protected, selected)
+{
+	color: Grey;
+}
+*/
+/*#cookiesTree treechildren::-moz-tree-cell-text(protected, selected, focus)*/
+#cookiesTree treechildren::-moz-tree-cell-text(protected, selected)
+{
+	color: lightgrey;
+}
+/*
+#cookiesTree treechildren::-moz-tree-cell-text(protected, selected, expired)
+{
+	color: #FE6A50;
+}
+*/
+
+/*#cookiesTree treechildren::-moz-tree-cell-text(protected, selected, expired, focus)*/
+#cookiesTree treechildren::-moz-tree-cell-text(protected, selected, expired)
+{
+	color: #FFDFDF;
+}
+/*#cookiesTree treechildren::-moz-tree-cell-text(selected, deleted2, focus)*/
+#cookiesTree treechildren::-moz-tree-cell-text(selected, deleted2)
+{
+	color: white;
+}
+#cookiesTree treechildren::-moz-tree-row()
+{
+	border: 0;
+}
+
+#cookiesTree treechildren::-moz-tree-row(current),
+#cookiesTree treechildren::-moz-tree-row(current, selected)
+{
+	border: 1px dashed black;
+}
+#cookiesTree treechildren::-moz-tree-row(current, focus),
+#cookiesTree treechildren::-moz-tree-row(current, selected, focus)
+{
+	border: 1px dashed black;
+}
+#cookiesTree treechildren::-moz-tree-row(selected),
+#cookiesTree treechildren::-moz-tree-row(selected, odd),
+#cookiesTree treechildren::-moz-tree-cell(selected),
+#cookiesTree treechildren::-moz-tree-cell(selected, odd)
+{
+	background-color: #6A6A6A;
+}
+#cookiesTree treechildren::-moz-tree-row(selected, focus),
+#cookiesTree treechildren::-moz-tree-row(selected, odd, focus),
+#cookiesTree treechildren::-moz-tree-cell(selected, focus),
+#cookiesTree treechildren::-moz-tree-cell(selected, odd, focus)
+{
+	background-color: #2D6AA8;
+}
+#cookiesTree treechildren::-moz-tree-cell(insertbefore),
+#cookiesTree treechildren::-moz-tree-cell(insertbefore odd),
+#cookiesTree treechildren::-moz-tree-cell(insertbefore selected),
+#cookiesTree treechildren::-moz-tree-cell(insertbefore selected odd)
+{
+  -moz-border-start: 1px solid ThreeDShadow;
+  margin-left: -1px;
+}
+
+#cookiesTree treechildren::-moz-tree-cell(insertafter),
+#cookiesTree treechildren::-moz-tree-cell(insertafter odd),
+#cookiesTree treechildren::-moz-tree-cell(insertafter selected),
+#cookiesTree treechildren::-moz-tree-cell(insertafter selected odd)
+{
+  -moz-border-end: 1px solid ThreeDShadow;
+  margin-right: -1px;
+}
+
+#cookiesTree treechildren::-moz-tree-cell-text(deleted2)
+{
+	font-style: italic;
+	text-decoration: line-through;
+	font-weight: bold;
+	color: black;
+}
+
+#cookiesTree treechildren::-moz-tree-cell-text(deleted1)
+{
+	font-weight: bold;
+	color: white
+}
+#cookiesTree treechildren::-moz-tree-row(deleted2),
+#cookiesTree treechildren::-moz-tree-cell(deleted2)
+{
+	background-color: pink;
+}
+#cookiesTree treechildren::-moz-tree-row(deleted1),
+#cookiesTree treechildren::-moz-tree-cell(deleted1)
+{
+	background-color: red;
+}
+#cookiesTree treechildren::-moz-tree-row(deleted1)
+{
+	border: 1px solid pink;
+}
+
+#cookiesTree treechildren::-moz-tree-progressmeter
+{
+	color: #00D228;
+}
+
+#cookiesTree treechildren::-moz-tree-image(type1)
+{
+	-moz-image-region: rect(0, 161px, 16px, 145px);
+	list-style-image: url("images/icons.png");
+}
+#cookiesTree treechildren::-moz-tree-image(type1, protected)
+{
+	-moz-image-region: rect(0, 176px, 16px, 160px);
+}
+#cookiesTree treechildren::-moz-tree-image(type2)
+{
+	-moz-image-region: rect(0, 280px, 16px, 264px);
+	list-style-image: url("images/icons.png");
+}
+#cookiesTree treechildren::-moz-tree-image(type2, protected)
+{
+	-moz-image-region: rect(0, 296px, 16px, 280px);
+}
+#cookiesTree treechildren::-moz-tree-progressmeter(expired)
+{
+}
+
+#cookiesTree treechildren::-moz-tree-progressmeter(session)
+{
+	border: 0;
+	background-color: transparent;
+}
+/*
+#cookiesTree treechildren::-moz-tree-image(ro)
+{
+	list-style-image: url("images/readwrite2.png") !important;
+	-moz-image-region: rect(0px, 38px, 12px, 27px);
+	width: 11px;
+	height: 12px;
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+*/
+#cookiesTree treechildren::-moz-tree-cell-text(ro)
+{
+	opacity: 0.7;
+	border-color: rgba(0,0,0,0.2);
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	box-shadow: inset 0 1px 0 red, 0 1px 0 white;
+}
+#cookiesTree treechildren::-moz-tree-cell-text(ro selected)
+{
+	opacity: 0.8;
+	border-color: rgba(200,200,200,0.5);
+}
+
+.infofield[multi="true"],
+.infofield[empty="true"],
+.infofield[na="true"]
+{
+	font-style: italic;
+	color: GrayText;
+}
+
+#ifl_isProtected:not([empty="true"]):not([multi="true"])
+{
+	width: 0;
+}
+.inputbutton *
+{
+	padding:0;
+}
+
+
+.sortmenu[checked="true"][sortDirection="ascending"] > .menu-iconic-left > .menu-iconic-icon,
+.sortmenu[checked="true"][sortDirection="descending"] > .menu-iconic-left > .menu-iconic-icon,
+.sortmenu[checked="true"][sortDirection="ascending"]:-moz-system-metric(windows-classic) > .menu-iconic-left > .menu-iconic-icon,
+.sortmenu[checked="true"][sortDirection="descending"]:-moz-system-metric(windows-classic) > .menu-iconic-left > .menu-iconic-icon
+{
+	display: -moz-box;
+	width: 9px;
+	height: 7px;
+	list-style-image: url("images/icons.png");
+}
+
+.sortmenu[checked="true"][sortDirection="ascending"] > .menu-iconic-left,
+.sortmenu[checked="true"][sortDirection="descending"] > .menu-iconic-left
+{
+	-moz-appearance: menuimage;
+}
+.sortmenu[checked="true"][sortDirection="ascending"] > .menu-iconic-left > .menu-iconic-icon,
+.sortmenu[checked="true"][sortDirection="ascending"]:-moz-system-metric(windows-classic) > .menu-iconic-left > .menu-iconic-icon
+{
+	-moz-image-region: rect(0px, 248px, 7px, 239px);
+}
+
+.sortmenu[checked="true"][sortDirection="descending"] > .menu-iconic-left > .menu-iconic-icon,
+.sortmenu[checked="true"][sortDirection="descending"]:-moz-system-metric(windows-classic) > .menu-iconic-left > .menu-iconic-icon
+{
+	-moz-image-region: rect(7px, 248px, 14px, 239px);
+}
+
+.contentPane
+{
+	margin: 0 5px 5px 5px;
+	padding: 0;
+}
+
+toolbox
+{
+	border: none;
+	-moz-appearance: none;
+}
+
+.offset .menu-text,
+.offset .menu-iconic-text
+{
+	-moz-padding-start: 1em;
+}
+
+row
+{
+	border: 1px dotted transparent;
+}
+row[highlight="true"][first="true"],
+row[highlight="true"][last="true"],
+row[highlight="true"]
+{
+	border-color: Highlight;
+}
+
+menulist:not([disabled="true"])
+{
+	cursor: pointer;
+}
+/*
+row[highlight="true"] > .inforowdataheader
+{
+	border: 1px dotted Highlight;
+	border-width: 1px 0 1px 1px;
+	margin: -1px 0 -1px -1px;
+	padding: 0;
+}
+row[highlight="true"] > .inforowdata
+{
+	border: 1px dotted Highlight;
+	border-width: 1px 1px 1px 0;
+	margin: -1px -1px -1px 0;
+	padding: 0;
+}
+*/
+
+menuitem[indeterminate] *
+{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+menuitem[indeterminate],
+menuitem[indeterminate] *
+{
+	font-style: italic;
+	opacity: 0.7;
+}
+
+*[hidden="true"]
+{
+	display: none;
+}
+
+#ifl_value
+{
+	min-height: 3em;
+}
+#ifl_value,
+#ifl_value *
+{
+	height: 100%;
+}
+#infoSplitter
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 0;
+	cursor: row-resize;
+}
+#infoSplitter > *
+{
+	height: 1px;
+	background-color: threedshadow;
+}
+
+#type
+{
+	min-width: 24px;
+	width: 24px;
+}
+#img_type
+{
+	margin-right: 3px;
+}
+#img_type[type="1"]
+{
+	-moz-image-region: rect(0, 161px, 16px, 145px);
+	list-style-image: url("images/icons.png");
+}
+#img_type[type="2"]
+{
+	-moz-image-region: rect(0, 280px, 16px, 264px);
+	list-style-image: url("images/icons.png");
+}
+#row_type[na="true"] #img_type,
+#row_type[multi="true"] #img_type,
+#row_type[empty="true"] #img_type
+{
+	display: none;
+}
+
+#loading > vbox > vbox
+{
+	padding: 2em;
+	background-color: white;
+	color: black;
+	visibility: hidden;
+}
+#loadingProgress
+{
+	height: 1.5em;
+}
+
+#sel
+{
+	width: 26px;
+}
+#flexcol
+{
+	width: 0px;
+	min-width: 0px;
+	max-width: 0px;
+}
+
+#cookiesTree treecol
+{
+/* work around for a bug https://bugzilla.mozilla.org/show_bug.cgi?id=1274862 */
+	-moz-binding: url("chrome://cookiesmanagerplus/content/bindings/tree.xml#treecol") !important;
+}
+
+#lookupstart .button-box
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.actionButtons
+{
+	margin-right: 0 !important;
+	margin: 5px 0 5px 2px;
+}
+
+row hbox.ro button,
+row hbox.ro button *
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	border: 0;
+}
+row hbox.ro button
+{
+	min-width: 2.5em;
+	min-height: 1.5em;
+	font-size: 0.8em;
+	cursor: help;
+}
+row hbox.ro button .button-icon,
+row:not([ro]) hbox.ro vbox:first-child > button,
+row:not([ro="false"]):not([multiro="true"]) hbox.ro vbox:first-child > button,
+row:not([ro]) hbox.ro vbox:last-child > button,
+row:not([ro="true"]):not([multiro="true"]) hbox.ro vbox:last-child > button
+{
+	display: none;
+}
+
+
+#protect_btn .button-icon,
+#unprotect_btn .button-icon
+{
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+
+#lookupcriterium
+{
+	-moz-binding: url("chrome://cookiesmanagerplus/content/bindings/autocomplete.xml#autocomplete");
+  cursor: default;
+
+}
+#lookupcriterium .autocomplete-history-dropmarker
+{
+	-moz-appearance: none;
+	
+}
+#lookupcriterium .autocomplete-history-dropmarker
+{
+	list-style-image: url("images/icons.png");
+	-moz-image-region: rect(9px, 305px, 16px, 296px);
+	-moz-appearance: none;
+	border: 0;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	min-width: 16px;
+	min-height: 16px;
+}
+#lookupcriterium .autocomplete-history-dropmarker .dropmaker-icon
+{
+	width: 11px;
+	height: 7px;
+	min-height: 7px;
+	min-width: 11px;
+	max-width: 11px;
+	max-height: 7px
+}
+#lookupcriterium .autocomplete-history-dropmarker .dropmarker-icon
+{
+}
+
+#lookupcriterium[entrytype="regex"],
+#lookupcriterium[entrytype="regex"] .autocomplete-history-dropmarker ,
+#lookupcriterium[entrytype="regex"] .autocomplete-history-dropmarker *,
+#lookupcriterium[entrytype="regex"] .autocomplete-textbox-container,
+#lookupcriterium[entrytype="regex"] .autocomplete-textbox-container *
+{
+	background-color: #ECFFEA !important;
+}
+
+#lookupcriterium[entrytype="error"],
+#lookupcriterium[entrytype="error"] .autocomplete-history-dropmarker ,
+#lookupcriterium[entrytype="error"] .autocomplete-history-dropmarker *,
+#lookupcriterium[entrytype="error"] .autocomplete-textbox-container,
+#lookupcriterium[entrytype="error"] .autocomplete-textbox-container *
+{
+	background-color: #FFEAEA;
+}
+#lookupcriterium .autocomplete-textbox-container > .textbox-search-icon
+{
+	display: -moz-box;
+	margin: 0;
+	padding: 0;
+	list-style-image: url("images/icons.png");
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+	width:16px;
+	height: 16px;
+	cursor: pointer;
+}
+.no-label * .button-text
+{
+	display: none;
+}
+
+#lookupstart
+{
+	min-width: 16px;
+	min-height: 16px;
+}
+
+.options,
+.ffcm
+{
+	list-style-image: url("images/icons.png");
+}
+.options
+{
+	-moz-image-region: rect(0 48px 16px 32px);
+}
+.ffcm
+{
+	-moz-image-region: rect(0 32px 16px 16px);
+}
+#secure
+{
+	list-style-image: url("images/icons.png");
+	-moz-image-region: rect(0 133px 16px 117px);
+}
+
+.wrap,
+.url,
+.json,
+.b64
+{
+	font-size: 8px;
+	width: 14px;
+	height: 14px;
+	max-width: 14px;
+	max-height: 14px;
+	min-height: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	cursor: help;
+	border-width: 1px;
+	-moz-appearance: groupbox
+}
+.wrap *,
+.url *,
+.json *,
+.b64 *
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	border-width: 0 !important;
+	min-height: 0 !important;
+	min-width: 0 !important;
+}
+
+#value_actions:not([collapsed="true"])
+{
+	max-width: 90px;
+}
+#value_actions:not([collapsed="true"])
+{
+	padding: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-right: 5px;
+}
+.json
+{
+	min-width: 23px;
+}
+.wrap
+{
+	min-width: 25px;
+}
+.b64
+{
+	min-width: 20px;
+}
+.url
+{
+	min-width: 19px;
+}
+
+.url[dragover],
+.json[dragover],
+.b64[dragover]
+{
+	outline: 1px solid;
+}
+
+.wrap:focus,
+.url:focus,
+.json:focus,
+.b64:focus
+{
+	outline: 1px dotted ThreeDDarkShadow;
+}
+
+#opt_value[decode="on"] .url[applied="true"],
+#opt_value[expand="on"] .json[applied="true"],
+#opt_value[base64decode="on"] .b64[applied="true"]
+{
+	box-shadow: 0px 0px 3px #0f0, inset 0px 0px 1px #0f0;
+/*
+	text-shadow: 0px 0px 1px #0f0;
+*/
+}
+#opt_value[wrap="off"] .wrap .button-text,
+#opt_value[decode="off"] .url .button-text,
+#opt_value[expand="off"] .json .button-text,
+#opt_value[base64decode="off"] .b64 .button-text
+{
+	opacity: 0.3;
+}
+
+#tooltipValue
+{
+	white-space: pre-wrap;
+	max-width: none;
+}
+
+#value_wrap
+{
+	display: none;
+}
