@@ -19,7 +19,8 @@ RUN apk upgrade --update && \
 
 
 ADD root /
-RUN cd /app/; npm update; npm install tty.js
+RUN mkdir /app
+RUN cd /app; npm update; npm install tty.js
 COPY tty.js /app/
 
 

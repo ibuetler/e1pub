@@ -3,6 +3,11 @@
 # cd into our directory
 cd /app
 
+cp /but/index.html /app/node_modules/tty.js/static/
+cp /but/style.css /app/node_modules/tty.js/static/
+cp /but/tty.js /app/node_modules/tty.js/static/
+
+
 # start our node.js application
 # node tty-me.js --daemonize;
 sudo -u hacker node tty.js;
