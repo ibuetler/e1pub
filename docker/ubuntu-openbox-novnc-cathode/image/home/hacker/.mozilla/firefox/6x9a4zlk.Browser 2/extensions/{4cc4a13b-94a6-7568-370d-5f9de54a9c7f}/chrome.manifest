@@ -1,7 +1,0 @@
-style chrome://global/content/customizeToolbar.xul chrome://emptycachebutton/skin/button.css
-overlay	chrome://browser/content/browser.xul chrome://emptycachebutton/content/button.xul
-
-content emptycachebutton chrome/content/
-skin emptycachebutton classic/1.0 chrome/skin/
-
-locale emptycachebutton en-US chrome/locale/en-US/
