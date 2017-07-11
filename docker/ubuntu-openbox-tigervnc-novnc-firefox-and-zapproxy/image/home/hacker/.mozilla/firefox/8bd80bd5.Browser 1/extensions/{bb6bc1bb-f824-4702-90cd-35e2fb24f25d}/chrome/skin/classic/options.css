@@ -1,0 +1,131 @@
+#presets
+{
+	cursor: pointer;
+}
+
+#presets * .button-text,
+.no-label * .button-text
+{
+	display: none;
+}
+#presets,
+#presets > hbox,
+#presets > hbox > dropmarker
+{
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#test
+{
+	-moz-appearance: none;
+	border: none;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+textbox[multiline="true"]
+{
+	font-family: "courier new", "times new roman", fixed, monospace;
+	-moz-tab-size: 2;
+}
+
+*[hidden="true"]
+{
+	display: none !important;
+}
+
+#main [tooltiptext],
+#main [tooltiptext] > label,
+#main [tooltiptext] groupbox > caption > label
+{
+	cursor: help;
+}
+
+#optionsBox > tabpanels
+{
+	padding: 3px;
+}
+#panelExport
+{
+	margin: 3px;
+	padding: 3px;
+}
+
+.info
+{
+	font-style: italic;
+}
+
+#coomanPlusWindowOptions
+{
+	min-width: 35em;
+	height: 39em;
+}
+
+spinbuttonsV
+{
+	-moz-binding: url("spinbuttons.xml#spinbuttonsV");
+}
+
+checkbox
+{
+	margin-left: 0;
+}
+
+.link,
+.link *
+{
+	-moz-appearance: none;
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+	min-height: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer !important;
+}
+.link:focus
+{
+	border-color: transparent;
+}
+
+
+treecol:not([type="checkbox"])
+{
+	min-width: 3em;
+}
+treecol[type="checkbox"] > label
+{
+	display: none;
+}
+treecol[type="checkbox"] > image,
+treechildren::-moz-tree-checkbox {
+	list-style-image: url("images/icons.png");
+	-moz-image-region: rect(0, 78px, 14px, 64px);
+}
+
+treecol[type="checkbox"][checked="2"] > image,
+treechildren::-moz-tree-checkbox(checked2) {
+	-moz-image-region: rect(0, 91px, 14px, 77px);
+}
+
+treecol[type="checkbox"][checked="3"] > image,
+treechildren::-moz-tree-checkbox(checked3) {
+	-moz-image-region: rect(0, 327px, 14px, 313px);
+}
+treecol#name
+{
+	width: 15em;
+}
+treecol#value
+{
+	width: 10em;
+}
+#coomanPlusWindowOptionsRestore
+{
+	min-width: 30em;
+	min-height: 40em;
+}

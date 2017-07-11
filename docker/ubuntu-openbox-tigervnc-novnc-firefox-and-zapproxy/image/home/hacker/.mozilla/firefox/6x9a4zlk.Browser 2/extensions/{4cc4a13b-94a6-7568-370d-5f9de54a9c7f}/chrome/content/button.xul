@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="chrome://emptycachebutton/skin/button.css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://emptycachebutton/locale/button.dtd">
+
+<overlay id="ecb-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script type="application/javascript" src="chrome://emptycachebutton/content/button.js"/>
+	
+	<keyset>
+		<key keycode="VK_F9" id="ecb-shortcut" oncommand="EmptyCacheButton.run(event)" />
+		<key keycode="VK_F9" id="ecb-shortcut-mac" modifiers="meta" oncommand="EmptyCacheButton.run(event)" />
+	</keyset>
+	
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="ecb-button" class="toolbarbutton-1" label="&button.emptynow;" tooltiptext="&button.tooltip;" 
+		oncommand="EmptyCacheButton.run(event);" context="ecb-context-menu" key="VK_F9">
+			<menupopup id="ecb-context-menu">
+				<menuitem label="&button.all;" value="all" />
+				<menuseparator />
+				<menuitem label="&button.disk;" value="disk" />
+				<menuitem label="&button.memory;" value="memory" />
+				<menuitem label="&button.offline;" value="offline" disabled="true" />
+				<menuitem label="&button.favicon;" value="favicon" disabled="true" />
+				<menuseparator/>
+				<menuitem label="&button.options;" value="options" />
+			</menupopup>
+		</toolbarbutton>
+	</toolbarpalette>
+
+</overlay>
