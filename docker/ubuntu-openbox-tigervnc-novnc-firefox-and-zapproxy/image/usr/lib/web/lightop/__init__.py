@@ -104,7 +104,7 @@ def redirectme():
         env['height'] = request.args['height']
 
     # sed
-    subprocess.check_call(r"sed -i 's#^command=/usr/bin/Xvfb.*$#command=/usr/bin/Xvfb :1 -screen 0 {width}x{height}x16#' /etc/supervisor/conf.d/supervisord.conf".format(**env),
+    #subprocess.check_call(r"sed -i 's#^command=/usr/bin/Xvfb.*$#command=/usr/bin/Xvfb :1 -screen 0 {width}x{height}x16#' /etc/supervisor/conf.d/supervisord.conf".format(**env),
                           shell=True)
     # supervisorctrl reload
     subprocess.check_call(r"supervisorctl reload", shell=True)
@@ -112,7 +112,7 @@ def redirectme():
     # check all running
     for i in xrange(20):
         output = subprocess.check_output(r"supervisorctl status | grep RUNNING | wc -l", shell=True)
-        if output.strip() == "6":
+        if output.strip() == "5":
             FIRST = False
             return HTML_REDIRECT
         time.sleep(2)

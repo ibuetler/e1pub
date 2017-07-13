@@ -19,8 +19,10 @@ RUN apt-get install -y --no-install-recommends --allow-unauthenticated \
 	wget \
 	git \
         python-pip python-dev build-essential \
-        dbus-x11 x11-utils 
-
+        dbus-x11 x11-utils \
+	libtasn1-3-bin \
+	libglu1-mesa \
+	xorg
 RUN apt-get autoclean
 RUN apt-get autoremove
 RUN rm -rf /var/lib/apt/lists/*
@@ -38,6 +40,9 @@ RUN chmod +x /bin/tini
 
 
 ADD image /
+RUN dpkg -i /root/tigervnc_1.8.0_ubuntu_16.04_64.deb
+RUN apt-get -f install
+RUN rm /root/tigervnc_1.8.0_ubuntu_16.04_64.deb
 RUN pip install --upgrade pip
 RUN pip install setuptools wheel
 RUN pip install -r /usr/lib/web/requirements.txt
