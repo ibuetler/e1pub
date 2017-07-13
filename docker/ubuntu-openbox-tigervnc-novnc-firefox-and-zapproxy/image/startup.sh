@@ -12,7 +12,8 @@ chown -R hacker:hacker /home/hacker
 #sudo -u hacker vncserver -kill :1
 #sed -i -e 's/twm/startlxde/g' /home/hacker/.vnc/xstartup
 
-sudo -u hacker vncserver -SecurityTypes None,TLSNone
+#sudo -u hacker vncserver -SecurityTypes None,TLSNone
+sudo -u hacker vncserver
 
 cd /usr/lib/web && ./run.py > /var/log/web.log 2>&1 &
 nginx -c /etc/nginx/nginx.conf

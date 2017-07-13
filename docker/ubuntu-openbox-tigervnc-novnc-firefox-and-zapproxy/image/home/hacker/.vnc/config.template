@@ -7,5 +7,4 @@
 # geometry=2000x1200
 # localhost
 # alwaysshared
-geometry=1024x768
 securitytypes=None,TLSNone

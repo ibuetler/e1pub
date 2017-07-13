@@ -9,10 +9,9 @@ RUN apt-get -y upgrade
 RUN apt-get install -y --no-install-recommends --allow-unauthenticated \
 	curl \
         supervisor \
-        openssh-server \
 	pwgen sudo vim-tiny \
         net-tools \
-        lxde x11vnc xvfb \
+        lxde x11vnc \
         firefox \
         nginx \
 	openjdk-8-jre \
@@ -23,6 +22,7 @@ RUN apt-get install -y --no-install-recommends --allow-unauthenticated \
 	libtasn1-3-bin \
 	libglu1-mesa \
 	xorg
+
 RUN apt-get autoclean
 RUN apt-get autoremove
 RUN rm -rf /var/lib/apt/lists/*
@@ -44,7 +44,7 @@ RUN dpkg -i /root/tigervnc_1.8.0_ubuntu_16.04_64.deb
 RUN apt-get -f install
 RUN rm /root/tigervnc_1.8.0_ubuntu_16.04_64.deb
 RUN pip install --upgrade pip
-RUN pip install setuptools wheel
+RUN pip install setuptools wheel numpy
 RUN pip install -r /usr/lib/web/requirements.txt
 
 # HACKER HOME

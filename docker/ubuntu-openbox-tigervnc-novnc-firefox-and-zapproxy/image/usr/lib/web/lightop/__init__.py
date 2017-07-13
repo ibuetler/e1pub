@@ -103,10 +103,17 @@ def redirectme():
     if 'height' in request.args:
         env['height'] = request.args['height']
 
+
+    # add geometry to config file
+    subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.template /home/hacker/.vnc/config.current", shell=True)
+    subprocess.check_call(r"sudo -u hacker echo 'geometry={width}x{height}' >> /home/hacker/.vnc/config.current".format(**env), shell=True)
+    subprocess.check_call(r"sudo -u hacker vncserver -kill :1", shell=True)
+    subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config /home/hacker/.vnc/config.backup", shell=True)
+    subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.current /home/hacker/.vnc/config", shell=True)
+    subprocess.check_call(r"sudo -u hacker vncserver", shell=True)
+
     return HTML_REDIRECT
 
-    # sed
-    #subprocess.check_call(r"sed -i 's#^command=/usr/bin/Xvfb.*$#command=/usr/bin/Xvfb :1 -screen 0 {width}x{height}x16#' /etc/supervisor/conf.d/supervisord.conf".format(**env), shell=True)
     # supervisorctrl reload
     # subprocess.check_call(r"supervisorctl reload", shell=True)
 
