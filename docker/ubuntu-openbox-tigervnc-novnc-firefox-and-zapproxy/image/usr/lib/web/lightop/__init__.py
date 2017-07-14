@@ -102,15 +102,17 @@ def redirectme():
         env['width'] = request.args['width']
     if 'height' in request.args:
         env['height'] = request.args['height']
-
-
-    # add geometry to config file
-    subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.template /home/hacker/.vnc/config.current", shell=True)
-    subprocess.check_call(r"sudo -u hacker echo 'geometry={width}x{height}' >> /home/hacker/.vnc/config.current".format(**env), shell=True)
-    subprocess.check_call(r"sudo -u hacker vncserver -kill :1", shell=True)
-    subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config /home/hacker/.vnc/config.backup", shell=True)
-    subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.current /home/hacker/.vnc/config", shell=True)
-    subprocess.check_call(r"sudo -u hacker vncserver", shell=True)
+    
+    if os.path.isfile("/home/hacker/.vnc/config.backup"):
+        subprocess.check_call(r"sudo -u hacker bash /home/hacker/xrandr.sh {width} {height} 60".format(**end), shell=True)
+    else:
+        # add geometry to config file
+        subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.template /home/hacker/.vnc/config.current", shell=True)
+        subprocess.check_call(r"sudo -u hacker echo 'geometry={width}x{height}' >> /home/hacker/.vnc/config.current".format(**env), shell=True)
+        subprocess.check_call(r"sudo -u hacker vncserver -kill :1", shell=True)
+        subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config /home/hacker/.vnc/config.backup", shell=True)
+        subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.current /home/hacker/.vnc/config", shell=True)
+        subprocess.check_call(r"sudo -u hacker vncserver", shell=True)
 
     return HTML_REDIRECT
 
