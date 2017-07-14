@@ -5,7 +5,10 @@ then
     echo "An argument is needed to run this script";
     exit
 else
+    export DISPLAY=:1.0
     arg="$@"
+    echo $arg >> /tmp/xrandr.log
+
     #Basic check to make sure argument number is valid. If not, display error and exit
     if [[ $(($(echo $arg | grep -o "\s" | wc --chars) / 2 )) -ne 2 ]];
     then
