@@ -104,7 +104,7 @@ def redirectme():
         env['height'] = request.args['height']
     
     if os.path.isfile("/home/hacker/.vnc/config.backup"):
-        subprocess.check_call(r"sudo -u hacker bash /home/hacker/xrandr.sh {width} {height} 60".format(**end), shell=True)
+        subprocess.check_call(r"sudo -u hacker bash /home/hacker/xrandr.sh {width} {height} 60".format(**env), shell=True)
     else:
         # add geometry to config file
         subprocess.check_call(r"sudo -u hacker cp /home/hacker/.vnc/config.template /home/hacker/.vnc/config.current", shell=True)
