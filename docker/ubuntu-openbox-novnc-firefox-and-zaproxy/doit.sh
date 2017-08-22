@@ -1,1 +1,1 @@
-docker build --rm -t "hackinglab/ubuntu-openbox-novnc-firefox-and-zaproxy" .
+docker build --no-cache -t "hackinglab/ubuntu-openbox-novnc-firefox-and-zaproxy" .
