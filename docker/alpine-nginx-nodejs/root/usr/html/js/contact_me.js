@@ -12,7 +12,7 @@ $(function() {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "https://node02.idocker.hacking-lab.com/node/",
+                url: "/app/",
                 type: "GET",
                 dataType: "json",
                 data: {
