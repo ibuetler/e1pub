@@ -1,7 +1,7 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 200px;
+  padding-bottom: 100px;
 
   text-align: center;
 
@@ -30,11 +30,11 @@ header.masthead {
 }
 @media(min-width:768px) {
   header.masthead {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 20px;
     .intro-text {
       .name {
-        font-size: 3.75em;
+        font-size: 1.75em;
       }
       .skills {
         font-size: 1.75em;
