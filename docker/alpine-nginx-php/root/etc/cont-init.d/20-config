@@ -1,0 +1,44 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders
+echo "================== make /config =========="
+mkdir -p \
+	/config/{nginx/site-confs,www,log/nginx,keys,log/php} \
+	/run \
+	/var/lib/nginx/tmp/client_body \
+	/var/tmp/nginx
+
+# copy config files
+[[ ! -f /config/nginx/nginx.conf ]] && \
+	echo "copy /defaults/nginx.conf to /config/nginx/nginx.conf"
+	cp /defaults/nginx.conf /config/nginx/nginx.conf
+	ls -al /config/nginx/
+[[ ! -f /config/nginx/site-confs/default ]] && \
+	echo "copy /defaults/default to /config/nginx/site-confs/default"
+	cp /defaults/default /config/nginx/site-confs/default
+	ls -al /config/nginx/site-confs/
+
+# fix timezone in php.ini
+echo "sed for php.ini"
+sed -i "s#;date.timezone =.*#date.timezone = $TZ#g" /etc/php7/php.ini
+
+#fix php-fpm log location
+sed -i "s#;error_log = log/php7/error.log.*#error_log = /config/log/php/error.log#g" /etc/php7/php-fpm.conf
+sed -i "s#;log_level = notice#log_level = debug#g" /etc/php7/php-fpm.conf
+
+#fix php-fpm user
+sed -i "s#user = nobody.*#user = hacker#g" /etc/php7/php-fpm.d/www.conf
+sed -i "s#group = nobody.*#group = hacker#g" /etc/php7/php-fpm.d/www.conf
+
+
+# permissions
+chown -R hacker:hacker \
+	/config \
+	/run \
+	/var/lib/nginx \
+	/var/tmp/nginx 
+chmod -R g+w \
+	/config/{nginx,www}
+chmod -R 644 /etc/logrotate.d
+
+

@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# copy config
+[[ ! -e /config/www/config.php ]] && \
+	cp /defaults/config.php /config/www/config.php
+
+# copy fastcgi_params
+[[ ! -e /config/nginx/fastcgi_params ]] && \
+        cp /defaults/fastcgi_params /config/nginx/fastcgi_params

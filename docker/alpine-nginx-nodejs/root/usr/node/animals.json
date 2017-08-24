@@ -7,7 +7,7 @@
     {"name": "Chicken"},
     {"name": "Bear"},
     {"name": "Lion"},
-    {"name": "Rat<script>alert('xss')</script>"},
+    {"name": "Rat"},
     {"name": "Dog"},
     {"name": "Dogfish"},
     {"name": "Dolphin"},
