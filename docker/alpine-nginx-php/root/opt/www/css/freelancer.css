@@ -67,6 +67,9 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto; }
 
+.but-link {
+  color: #0f4396; }
+
 section {
   padding: 100px 0; }
   section h2 {
