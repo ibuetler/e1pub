@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bash
+
+myuser="hacker"
+adduser -D -u 2000 $myuser
+echo "$myuser:compass" | chpasswd
+echo 'root:rTGeUeFBzTucbyG2' | chpasswd
+
+
+echo "
+-------------------------------------
+GID/UID
+-------------------------------------
+User uid:    $(id -u $myuser)
+User gid:    $(id -g $myuser)
+-------------------------------------
+"
+#chown -R $myuser:$myuser /opt/www
