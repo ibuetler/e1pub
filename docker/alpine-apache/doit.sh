@@ -1,1 +1,1 @@
-docker build -t hackinglab/alpine-apache -f Dockerfile .
+docker build --no-cache -t hackinglab/alpine-apache -f Dockerfile .
