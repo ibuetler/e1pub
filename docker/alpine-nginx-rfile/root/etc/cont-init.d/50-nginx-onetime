@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+exec sed -i "s/RFILE/$RFILE/g" /usr/html/index.html;
+
+
