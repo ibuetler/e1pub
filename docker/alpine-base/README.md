@@ -15,7 +15,7 @@ This image features:
 
 ## Versions
 
-- `1.0.2`, `latest` [(Dockerfile)](https://github.com/ibuetler/e1pub/tree/master/docker/alpine-base/Dockerfile)
+- `1.0.7`, `latest` [(Dockerfile)](https://github.com/ibuetler/e1pub/tree/master/docker/alpine-base/Dockerfile)
 
 
 ## Usage

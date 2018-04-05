@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
 # Add s6-overlay
-ENV S6_OVERLAY_VERSION=v1.21.2.2 \
+ENV S6_OVERLAY_VERSION=v1.21.4.0 \
     GO_DNSMASQ_VERSION=1.0.7
 
 RUN apk add --update --no-cache bind-tools curl libcap bash net-tools 
