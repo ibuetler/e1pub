@@ -26,7 +26,7 @@ Mot de passe = compass
 
 Après la première connexion, vous verrez l'interface graphique du LiveCD Hacking-Lab.
 
-Langue du clavier
+## Langue du clavier
 Le clavier du LiveCD est réglé sur US English. Vous pouvez facilement changer le clavier à l'aide d'un élément de menu. Par exemple, pour Swiss-Allemand :
 
 1. cliquez sur Démarrer (en haut à gauche)
