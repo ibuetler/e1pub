@@ -43,7 +43,7 @@ Veuillez mettre à jour votre LiveCD de temps en temps. Pour cela, il existe une
 
 1. cliquez sur Démarrer (en haut à gauche)
 2. cliquez sur 00-A propos de
-3. mise à jour LiveCD
+3. cliquez sur Update LiveCD
 
 ![update](update.png)
 
