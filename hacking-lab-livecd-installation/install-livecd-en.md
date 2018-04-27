@@ -33,6 +33,8 @@ The keyboard on the LiveCD is set to US English. You can conveniently change the
 2. click on 00-About
 3. click on Change-Keyboard-Layout-Permanently
 
+![keyboard](keyboard.png)
+
 A new window appears. Enter "ch" and press the ENTER button. Now your LiveCD is set to Switzerland, even if you restart the LiveCD.
 
 

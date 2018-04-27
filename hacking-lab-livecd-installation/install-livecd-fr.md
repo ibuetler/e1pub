@@ -33,6 +33,8 @@ Le clavier du LiveCD est réglé sur US English. Vous pouvez facilement changer 
 2. cliquez sur 00-A propos de
 3. cliquez sur Change-Keyboard-Layout-Permanemment.
 
+![keyboard](keyboard.png)
+
 Une nouvelle fenêtre apparaît. Entrer "ch" et appuyer sur la touche ENTER. Maintenant, votre LiveCD est réglé sur Suisse, même si vous redémarrez le LiveCD.
 
 
