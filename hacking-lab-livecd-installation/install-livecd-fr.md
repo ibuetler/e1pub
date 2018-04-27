@@ -22,6 +22,8 @@ Veuillez démarrer le LiveCD dans VirtualBox. Cela prendra quelques minutes, pui
 Nom d'utilisateur = hacker
 Mot de passe = boussole
 
+![gui](gui.png)
+
 Après la première connexion, vous verrez l'interface graphique du LiveCD Hacking-Lab.
 
 Langue du clavier
@@ -41,6 +43,8 @@ Veuillez mettre à jour votre LiveCD de temps en temps. Pour cela, il existe une
 2. cliquez sur 00-A propos de
 3. mise à jour LiveCD
 
+![update](update.png)
+
 Puisque Kali Linux apporte beaucoup de mises à jour, vous devez allouer environ 5-10 minutes pour cela. Vous pouvez également continuer à travailler dans votre LiveCD pendant la mise à jour.
 
 ## Pointeur de souris
@@ -51,3 +55,5 @@ Le LiveCD doit être configuré de façon à ce que vous puissiez travailler ave
 
 ## VPN
 Pour accéder aux systèmes vulnérables du laboratoire de piratage, vous devez établir une connexion VPN avec le laboratoire de piratage. Vous verrez une icône VPN dans le coin supérieur droit du menu. Cliquez avec le bouton droit de la souris sur l'icône VPN et sélectionnez "Connect Hacking-Lab". Vous devez entrer un nom d'utilisateur et un mot de passe. Veuillez ouvrir un compte sur https://www.hacking-lab.com/ et utiliser exactement le même nom d'utilisateur (e-mail) et le mot de passe que vous avez choisi pour le VPN.
+
+![vpn](vpn.png)

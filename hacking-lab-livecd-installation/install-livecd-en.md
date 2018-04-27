@@ -22,6 +22,8 @@ Please start the LiveCD in VirtualBox. It will take a few minutes and then you w
 Username = hacker
 Password = compass
 
+![gui](gui.png)
+
 After the first login you will see the graphical user interface of the Hacking-Lab LiveCD.
 
 ## Language of the keyboard
@@ -41,6 +43,8 @@ Please update your LiveCD from time to time. There is a menu entry for this, via
 2. click on 00-About
 3. Update LiveCD
 
+![update](update.png)
+
 Since Kali Linux brings many updates, you have to allow about 5-10 minutes for it. You can also continue working in your LiveCD during the update.
 
 ## Mouse pointer
@@ -51,3 +55,5 @@ The LiveCD should be set so that you can work with copy and paste. If you have p
 
 ## VPN
 To access the vulnerable systems in the Hacking Lab, you need to establish a VPN connection with Hacking Lab. You will see a VPN icon in the top right corner of the taskbar. Please right-click on the VPN icon and select "Connect Hacking-Lab". You must enter a user name and password. Please register an account on https://www.hacking-lab.com/ and use exactly the same user name (e-mail) and your chosen password for the VPN.
+
+![vpn](vpn.png)
