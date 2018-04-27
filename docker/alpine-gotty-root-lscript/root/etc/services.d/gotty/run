@@ -1,3 +1,0 @@
-#!/usr/bin/with-contenv sh
-cd /root
-exec /usr/local/bin/gotty --port 8080 --permit-write /bin/bash
