@@ -7,7 +7,7 @@ To use the LiveCD on your computer, the hypervisor feature in the BIOS must be a
 
 ![bios](bios.png)
 
-Install VirtualBox
+## Install VirtualBox
 Please download the latest VirtualBox software for your operating system from http://www.virtualbox.org. Follow the installation instructions on the website. Administrator rights are required for installation.
 
 ## Download Hacking-Lab OVA
