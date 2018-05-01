@@ -1,2 +1,9 @@
 # e1pub
-E1 Public Repository
+## Introduction
+This is a public repository by E1. 
+
+## Purpose
+Quick sharing of information among friends and family
+
+## Author
+e1@hacking-lab.com
