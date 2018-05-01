@@ -1,0 +1,4 @@
+#!/bin/bash -xe
+
+docker rmi -f $(docker images|egrep -v "rocket.chat|mongo|owaspbricks|nodered|codiad|^ubuntu" |grep -v IMAGE | awk '{print $3 " "}' | tr -d '\n' )
+redis-cli flushall

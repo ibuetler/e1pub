@@ -1,0 +1,13 @@
+#!/bin/bash -xe
+
+# docker id might be given as a parameter
+DID=$1
+
+if [[ "$DID" == "" ]]; then
+  DID=$(docker ps | grep -Eo "^[0-9a-z]{8,}\b")
+fi
+
+echo "========"
+echo $DID
+echo "========"
+docker exec -i -t $DID sh

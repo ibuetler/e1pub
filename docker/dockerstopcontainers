@@ -1,0 +1,3 @@
+#!/bin/bash -xe
+docker stop $(docker ps -q)
+redis-cli flushall
