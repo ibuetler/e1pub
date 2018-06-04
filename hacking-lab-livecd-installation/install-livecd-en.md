@@ -1,6 +1,6 @@
 # Installing Hacking-Lab LiveCD
 ## Introduction
-This guide will help you install the Hacking-Lab LiveCD on your laptop or computer. The LiveCD is needed to establish a VPN connection to the Hacking-Lab and is based on a 64 Bit Kali Linux system. Furthermore, the LiveCD is optimized and prepared for various exercises in Hacking Lab. You need a 64 bit laptop for the LiveCD to work correctly.
+This guide will help you install the Hacking-Lab LiveCD on your laptop or computer. The LiveCD is needed to establish a VPN connection to the Hacking-Lab and is based on a 64-bit Kali Linux system. Furthermore, the LiveCD is optimized and prepared for various exercises in Hacking Lab. You need a 64-bit laptop for the LiveCD to work correctly.
 
 ## Pre-requirement
 To use the LiveCD on your computer, the hypervisor feature in the BIOS must be activated on your PC. Please ensure this first, otherwise the LiveCD will not start.
@@ -8,10 +8,10 @@ To use the LiveCD on your computer, the hypervisor feature in the BIOS must be a
 ![bios](bios.png)
 
 ## Install VirtualBox
-Please download the latest VirtualBox software for your operating system from http://www.virtualbox.org. Follow the installation instructions on the website. Administrator rights are required for installation.
+Please download the latest VirtualBox software for your operating system from https://www.virtualbox.org. Follow the installation instructions on the website. Administrator rights are required for installation.
 
 ## Download Hacking-Lab OVA
-Please download the OVA file for Windows or OSX from https://media.hacking-lab.com/installation/virtualbox/ Make sure you download the correct version. After downloading, check that the file has the file extension "ova". If it is "zip", rename the file to "ova".
+Please download the OVA file for Windows or macOS from https://media.hacking-lab.com/installation/virtualbox/. Make sure you download the correct version. After downloading, check that the file has the file extension "ova". If it is "zip", rename the file to "ova".
 
 ## Import LiveCD into VirtualBox
 Please start VirtualBox and press the "CTRL + I" keys. You will be prompted for the path where the "ova" file is located. Select it and confirm your entry. You can also start the import function via menu File -> Appliance Import. After a few minutes of "Import", the LiveCD is available in VirtualBox.
@@ -26,8 +26,8 @@ Password = compass
 
 After the first login you will see the graphical user interface of the Hacking-Lab LiveCD.
 
-## Language of the keyboard
-The keyboard on the LiveCD is set to US English. You can conveniently change the keyboard via a menu item. For example, for Swiss-German:
+## Language / layout of the keyboard
+The keyboard on the LiveCD is set to US English layout. You can conveniently change the keyboard via a menu item. For example, for Swiss-German:
 
 1. click on Start (top left)
 2. click on 00-About
@@ -35,19 +35,19 @@ The keyboard on the LiveCD is set to US English. You can conveniently change the
 
 ![keyboard](keyboard.png)
 
-A new window appears. Enter "ch" and press the ENTER button. Now your LiveCD is set to Switzerland, even if you restart the LiveCD.
+A new window appears. Enter "ch" and press the ENTER button. Now your LiveCD is set to Swiss-german layout, even if you restart the LiveCD.
 
 
 ## Updates LiveCD
 Please update your LiveCD from time to time. There is a menu entry for this, via which you can update the LiveCD. An Internet connection is required.
 
-1. click on Start (top left)
-2. click on 00-About
+1. Click on Start (top left)
+2. Click on 00-About
 3. Update LiveCD
 
 ![update](update.png)
 
-Since Kali Linux brings many updates, you have to allow about 5-10 minutes for it. You can also continue working in your LiveCD during the update.
+Since Kali Linux delivers updates frequently and numerously, you have to allow about 5-15 minutes for it. You can continue working in your LiveCD during the update.
 
 ## Mouse pointer
 Press the CTRL key on the right side of your keyboard if you want to free the mouse pointer from VirtualBox.
