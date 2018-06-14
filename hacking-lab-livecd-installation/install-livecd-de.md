@@ -1,18 +1,18 @@
 # Installation Hacking-Lab LiveCD
 ## Einleitung
-Dieser Guide unterstützt Sie bei der Installation der Hacking-Lab LiveCD auf ihren Laptop oder Computer. Die LiveCD wird benötigt, um eine VPN Verbindung ins Hacking-Lab aufzubauen und basiert auf einem 64 Bit Kali Linux System. Darüber hinaus ist die LiveCD für diverse Übungen im Hacking-Lab optimiert und vorbereitet. Sie benötigen ein 64 Bit Laptop, damit die LiveCD korrekt funktioniert.
+Dieser Guide unterstützt Sie bei der Installation der Hacking-Lab LiveCD auf Ihren Laptop oder Computer. Die LiveCD wird benötigt, um eine VPN Verbindung ins Hacking-Lab aufzubauen und basiert auf einem 64-Bit Kali Linux System. Darüber hinaus ist die LiveCD für diverse Übungen im Hacking-Lab optimiert und vorbereitet. Sie benötigen ein 64-Bit Laptop, damit die LiveCD korrekt funktioniert.
 
 
-## Pre-Requirement
+## Voraussetzung
 Damit die LiveCD auf Ihrem Computer genutzt werden kann, muss die Hypervisor Funktion im BIOS von Ihrem PC aktiviert sein. Bitte stellen Sie dies zuerst sicher, ansonsten lässt sich die LiveCD nicht starten.
 
 ![bios](bios.png)
 
 ## Installation VirtualBox
-Bitte laden Sie von http://www.virtualbox.org die neueste VirtualBox Software für Ihr Betriebssystem herunter. Folgen Sie der Installationsanleitung auf der Webseite. Für die Installation sind Administrator Rechte notwendig.
+Bitte laden Sie von https://www.virtualbox.org die neueste VirtualBox Software für Ihr Betriebssystem herunter. Folgen Sie der Installationsanleitung auf der Webseite. Für die Installation sind Administrator Rechte notwendig.
 
 ## Download Hacking-Lab OVA
-Bitte laden Sie von https://media.hacking-lab.com/installation/virtualbox/ die OVA Datei für Windows oder OSX herunter. Stellen Sie sicher, dass Sie die korrekte Version herunterladen. Prüfen Sie nach dem Download, dass die Datei die Dateiendung "ova" aufweist. Sollte sie "zip" sein, benennen Sie die Datei auf "ova" um.
+Bitte laden Sie von https://media.hacking-lab.com/installation/virtualbox/ die OVA Datei für Windows oder macOS herunter. Stellen Sie sicher, dass Sie die korrekte Version herunterladen. Prüfen Sie nach dem Download, dass die Datei die Dateiendung "ova" aufweist. Sollte sie "zip" sein, benennen Sie die Datei auf "ova" um.
 
 ## Import LiveCD in VirtualBox
 Bitte starten Sie VirtualBox und drücken Sie die Tasten "CTRL + I". Sie werden aufgefordert den Pfad anzugeben, wo sich die "ova" Datei befindet. Wählen Sie diese aus und bestätigen Sie die Eingabe. Sie können die Import Funktion auch via Menü über Datei -> Appliance Importieren starten. Nach ein paar Minuten "Import" steht Ihnen die LiveCD in VirtualBox zur Verfügung.
@@ -29,7 +29,7 @@ Nach dem ersten Login sehen Sie die graphische Oberfläche der Hacking-Lab LiveC
 
 
 ## Sprache der Tastatur
-Die Tastatur in der LiveCD ist auf US English eingestellt. Sie können die Tastatur bequem über einen Menü Eintrag verändern. Beispielsweise für Schweizerdeutsch:
+Die Tastatur in der LiveCD ist standardmässig auf US English eingestellt. Sie können die Tastatur bequem über einen Menü Eintrag verändern. Beispielsweise für Schweizerdeutsch:
 
 1. Klicken Sie auf Start (oben links)
 2. Klicken Sie auf 00-About
@@ -50,7 +50,7 @@ Bitte aktualisieren Sie Ihre LiveCD von Zeit zu Zeit. Hierfür gibt es einen Men
 
 ![update](update.png)
 
-Da Kali Linux viele Updates bringt, müssen Sie ca. 5-10 Minuten dafür einrechnen. Sie können aber auch während dem Update in Ihrer LiveCD weiter arbeiten.
+Da Kali Linux viele Updates bringt, müssen Sie ca. 5-15 Minuten dafür einrechnen. Sie können während dem Update in Ihrer LiveCD weiter arbeiten.
 
 
 ## Mauszeiger
@@ -63,4 +63,4 @@ Die LiveCD sollte so eingestellt sein, dass Sie mit Copy und Paste arbeiten kön
 
 ![vpn](vpn.png)
 
-Um auf die verwundbaren Systeme im Hacking-Lab zugreifen zu können, müssen Sie eine VPN Verbindung mit dem Hacking-Lab aufbauen. Sie sehen oben rechts im Menü ein VPN Icon. Bitte klicken Sie mit der rechten Maustaste auf das VPN Icon und wählen Sie "Connect Hacking-Lab". Sie müssen einen Benutzername und Passwort eingeben. Bitte registrieren Sie auf https://www.hacking-lab.com/ einen Account und verwenden Sie für das VPN den genau gleichen Benutzernamen (e-mail) und Ihr gewähltes Passwort.
+Um auf die verwundbaren Systeme im Hacking-Lab Netzwerk zugreifen zu können, müssen Sie eine VPN Verbindung zu diesem aufbauen. Sie sehen oben rechts im Menü ein VPN Icon. Bitte klicken Sie mit der rechten Maustaste auf das VPN Icon und wählen Sie "Connect Hacking-Lab". Sie müssen einen Benutzername und Passwort eingeben. Bitte registrieren Sie auf https://www.hacking-lab.com/ einen Account und verwenden Sie für das VPN den genau gleichen Benutzernamen (e-mail) und Ihr gewähltes Passwort.
