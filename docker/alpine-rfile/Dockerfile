@@ -1,24 +1,34 @@
-FROM hackinglab/alpine-base:latest
-MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
+FROM alpine:latest
+LABEL maintainer="Ivan Buetler <team@hacking-lab.com>"
 
+# Add s6-overlay
+ENV S6_OVERLAY_VERSION=v1.21.4.0 \
+    GO_DNSMASQ_VERSION=1.0.7
+
+RUN apk update && apk upgrade
+RUN apk add --update --no-cache bind-tools curl libcap bash net-tools 
+
+RUN curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz | tar xfz - -C / 
+RUN curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GO_DNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq && \
+    chmod +x /bin/go-dnsmasq && \
+    apk del curl && \
+    # create user and give binary permissions to bind to lower port
+    addgroup go-dnsmasq && \
+    adduser -D -g "" -s /bin/sh -G go-dnsmasq go-dnsmasq && \
+    setcap CAP_NET_BIND_SERVICE=+eip /bin/go-dnsmasq
+
+
+# NGINX
 ARG NGINX_GID=48
 ARG NGINX_UID=48
 
-# Install nginx
-RUN apk upgrade --available
-
-RUN echo "http://dl-4.alpinelinux.org/alpine/v3.7/main" >> /etc/apk/repositories 
-#RUN apk add --update nginx=1.8.1-r1
 RUN addgroup -g ${NGINX_GID} nginx
 RUN adduser -D -g "" -u ${NGINX_UID} -s /sbin/nologin -G nginx nginx
 
 RUN apk add --update nginx=1.12.2-r3
 RUN rm -rf /var/cache/apk/* && chown -R nginx:www-data /var/lib/nginx
 
-# Add the files
-ADD root /
+COPY root /
 
-# Expose the ports for nginx
-EXPOSE 80
-
-
+ENTRYPOINT ["/init"]
+CMD []
