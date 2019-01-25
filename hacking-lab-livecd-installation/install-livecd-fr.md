@@ -11,7 +11,7 @@ Pour utiliser le LiveCD sur votre ordinateur, la fonction hyperviseur du BIOS do
 Veuillez télécharger la dernière version du logiciel VirtualBox pour votre système d'exploitation sur http://www.virtualbox.org Suivez les instructions d'installation sur le site Web. Les droits d'administrateur sont requis pour l'installation.
 
 ## Télécharger Hacking-Lab OVA
-Veuillez télécharger le fichier OVA pour Windows ou OSX à partir de https://media.hacking-lab.com/installation/virtualbox/ Assurez-vous de télécharger la bonne version. Après le téléchargement, vérifiez que le fichier porte l'extension "ova". Si c'est "zip", renommez le fichier en "ova".
+Veuillez télécharger le fichier OVA pour Windows ou OSX à partir de https://media.hacking-lab.com/ . Après le téléchargement, vérifiez que le fichier porte l'extension "ova". Si c'est "zip", renommez le fichier en "ova".
 
 ## Importer des LiveCD dans VirtualBox
 Démarrez VirtualBox et appuyez sur les touches "CTRL + I". Vous serez invité à indiquer le chemin d'accès où se trouve le fichier "ova". Sélectionnez-le et confirmez votre saisie. Vous pouvez également lancer la fonction d'importation via le menu Fichier -> Importation d'appareils. Après quelques minutes d'"Import", le LiveCD est disponible dans VirtualBox.

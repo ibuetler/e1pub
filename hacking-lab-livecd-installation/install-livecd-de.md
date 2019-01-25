@@ -12,7 +12,7 @@ Damit die LiveCD auf Ihrem Computer genutzt werden kann, muss die Hypervisor Fun
 Bitte laden Sie von https://www.virtualbox.org die neueste VirtualBox Software für Ihr Betriebssystem herunter. Folgen Sie der Installationsanleitung auf der Webseite. Für die Installation sind Administrator Rechte notwendig.
 
 ## Download Hacking-Lab OVA
-Bitte laden Sie von https://media.hacking-lab.com/installation/virtualbox/ die OVA Datei für Windows oder macOS herunter. Stellen Sie sicher, dass Sie die korrekte Version herunterladen. Prüfen Sie nach dem Download, dass die Datei die Dateiendung "ova" aufweist. Sollte sie "zip" sein, benennen Sie die Datei auf "ova" um.
+Bitte laden Sie von https://media.hacking-lab.com/ die OVA Datei herunter. Stellen Sie sicher, dass Sie die korrekte Version herunterladen. Prüfen Sie nach dem Download, dass die Datei die Dateiendung "ova" aufweist. Sollte sie "zip" sein, benennen Sie die Datei auf "ova" um.
 
 ## Import LiveCD in VirtualBox
 Bitte starten Sie VirtualBox und drücken Sie die Tasten "CTRL + I". Sie werden aufgefordert den Pfad anzugeben, wo sich die "ova" Datei befindet. Wählen Sie diese aus und bestätigen Sie die Eingabe. Sie können die Import Funktion auch via Menü über Datei -> Appliance Importieren starten. Nach ein paar Minuten "Import" steht Ihnen die LiveCD in VirtualBox zur Verfügung.
