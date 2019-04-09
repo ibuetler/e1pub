@@ -1,0 +1,33 @@
+version: '2'
+
+services:
+
+  auth-proxy:
+    image: ibuetler/keycloak-auth-proxy-golang:latest
+    labels:
+     - "traefik.port=3000"
+     - "traefik.frontend.rule=Host:ip2location.idocker.hacking-lab.com"
+     - "traefik.protocol=http"
+    volumes:
+      - ./config:/etc/keycloak-auth-proxy.conf
+    entrypoint:
+      - /opt/keycloak-proxy
+      - --config=/etc/keycloak-auth-proxy.conf
+
+  app:
+    container_name: geoip.app
+    build: docker/php
+    volumes:
+      - /opt/git/ip2geo:/var/www
+    labels:
+      - "traefik.enable=false"
+
+  nginx:
+    container_name: geoip.nginx
+    build: docker/nginx
+    volumes_from:
+      - app
+    labels:
+      - "traefik.enable=false"
+
+

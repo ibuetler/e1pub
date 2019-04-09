@@ -1,0 +1,1 @@
+docker run --rm --label="traefik.port=3000" --label="traefik.frontend.rule=Host:hsr.idocker.hacking-lab.com" --label="traefik.protocol=http" -v `pwd`/config:/etc/keycloak-gatekeeper.conf -i hackinglab/keycloak-gatekeeper --config=/etc/keycloak-gatekeeper.conf

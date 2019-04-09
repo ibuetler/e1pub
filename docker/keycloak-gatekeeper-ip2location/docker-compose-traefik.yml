@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+  app:
+    container_name: geoip.app
+    build: docker/php
+    volumes:
+      - /home/ibuetler/git/ip2geo:/var/www
+    labels:
+      - "traefik.enabled=false"
+
+  nginx:
+    container_name: geoip.nginx
+    build: docker/nginx
+    volumes_from:
+      - app
+    labels:
+      - "traefik.port=80"
+      - "traefik.frontend.rule=Host:ip2location.idocker.hacking-lab.com"
+      - "traefik.protocol=http"

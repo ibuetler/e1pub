@@ -1,0 +1,39 @@
+version: "3.4"
+
+services:
+  keycloak_db:
+    image: postgres:11.2-alpine
+    restart: always
+    environment:
+        - POSTGRES_DB=keycloak
+        - POSTGRES_USER=keycloak
+        - POSTGRES_PASSWORD=changeme-postgres
+        - POSTGRES_ROOT_PASSWORD=changeme-rootpw
+    volumes:
+      - /opt/data/keycloak/postgres/data:/var/lib/postgresql/data
+    labels:
+      - "traefik.enable=false"
+
+  keycloak:
+      image: jboss/keycloak:latest
+      restart: always
+      hostname: keycloak
+      environment:
+        - PROXY_ADDRESS_FORWARDING=true
+        - KEYCLOAK_LOGLEVEL=INFO
+        - POSTGRES_PORT_5432_TCP_ADDR=keycloak_db
+        - POSTGRES_PORT_5432_TCP_PORT=5432
+        # Notice: Regarding the documentation jboss/keycloak should use the two variables down here to connect to postgres.
+        # Unfortunately there seems to be a bug in version 3.4.3.Final where it still searches for the two variables above.
+        #- POSTGRES_ADDR=keycloak_db
+        #- POSTGRES_PORT=5432
+        - POSTGRES_DATABASE=keycloak
+        - POSTGRES_USER=keycloak
+        - POSTGRES_PASSWORD=changeme-postgres
+        - KEYCLOAK_USER=admin
+        - KEYCLOAK_PASSWORD=changeme-keycloak
+      labels:
+        - traefik.port=8443
+        - traefik.frontend.rule=Host:auth.idocker.hacking-lab.com
+        - traefik.protocol=https
+      command: ["-b", "0.0.0.0", "-Dkeycloak.profile.feature.docker=enabled"]

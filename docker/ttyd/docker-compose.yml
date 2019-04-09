@@ -1,8 +1,8 @@
 version: '2'
 services:
 
-  ttypd:
-    image: tsl0922/ttyd
+  ttyd:
+    image: hackinglab/hl-kali-docker-ttyd
     labels:
       - "traefik.port=7681"
       - "traefik.frontend.rule=Host:ttyd.idocker.hacking-lab.com"

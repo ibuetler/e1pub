@@ -1,0 +1,16 @@
+version: '2'
+services:
+  auth-proxy:
+    image: hackinglab/keycloak-gatekeeper:latest
+    labels: 
+     - "traefik.port=3000"
+     - "traefik.frontend.rule=Host:ip2location.idocker.hacking-lab.com"
+     - "traefik.protocol=http"
+    volumes:
+      - ./config:/etc/keycloak-auth-proxy.conf
+    entrypoint: 
+      - /opt/keycloak-proxy
+      - --config=/etc/keycloak-auth-proxy.conf
+
+
+

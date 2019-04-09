@@ -1,0 +1,19 @@
+{
+  "name": "taras-by/ip2geo",
+  "description": "IP geolocation service",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Taras",
+      "email": "landgradus@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+}
