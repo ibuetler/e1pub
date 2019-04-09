@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+  repo:
+    image: hackinglab/debian-apache-repository
+    labels:
+      - "traefik.repo.port=80"
+      - "traefik.repo.frontend.rule=Host:repo.idocker.hacking-lab.com"
+      - "traefik.repo.protocol=http"
+    volumes:
+      - /var/www1:/var/www1
+      - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+
+

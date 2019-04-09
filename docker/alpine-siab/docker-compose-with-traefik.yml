@@ -9,5 +9,9 @@ services:
     - SIAB_SSL=false
     - SIAB_PKGS=
     - SIAB_SERVICE=/:LOGIN
-    ports:
-    - 4200:4200
+    labels:
+      - "traefik.port=4200"
+      - "traefik.frontend.rule=Host:siab.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
+
+

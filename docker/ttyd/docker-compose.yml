@@ -1,0 +1,9 @@
+version: '2'
+services:
+
+  ttypd:
+    image: tsl0922/ttyd
+    labels:
+      - "traefik.port=7681"
+      - "traefik.frontend.rule=Host:ttyd.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
