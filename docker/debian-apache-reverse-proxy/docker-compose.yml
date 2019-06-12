@@ -1,0 +1,11 @@
+version: '2'
+services:
+  apache2:
+    build: .
+    ports:
+    - "80:80"
+    volumes:
+    - ./reverse_proxy.conf:/etc/apache2/sites-enabled/reverse_proxy.conf:ro
+    command:
+    - /usr/sbin/apachectl
+    - -DFOREGROUND

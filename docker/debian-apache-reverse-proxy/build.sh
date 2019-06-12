@@ -1,0 +1,1 @@
+docker build -t ibuetler/debian-apache-reverse-proxy .
