@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  alpine-node-ttyjs:
+    image: hackinglab/alpine-node-ttyjs
+    environment:
+    - AUTHOR=e1
+    ports:
+    - 4200:4200

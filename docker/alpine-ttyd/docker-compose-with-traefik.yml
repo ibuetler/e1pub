@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  ttypd:
+    image: hackinglab/alpine-ttyd
+    environment:
+    - AUTHOR=e1
+    - USERNAME=cracker
+    labels:
+      - "traefik.port=7681"
+      - "traefik.frontend.rule=Host:ttyd.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
+
+

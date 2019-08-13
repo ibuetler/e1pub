@@ -38,9 +38,6 @@ RUN apk -U upgrade && \
       -e 's/ZSH_THEME\=.+/ZSH_THEME="timhaak"/' \
       /root/.zshrc && \
     echo 'set-option -g default-shell /bin/zsh' >> /root/.tmux.conf && \
-    pip install docker-compose && \
-    curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && \
-    chmod +x /usr/local/bin/docker-machine && \
     rm -rf /tmp/gotty /var/cache/apk/* /tmp/src
 
 ADD ./files/timhaak.zsh-theme /root/.oh-my-zsh/themes/timhaak.zsh-theme

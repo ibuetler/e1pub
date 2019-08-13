@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  alpine-node-ttyjs:
+    image: hackinglab/alpine-node-ttyjs
+    environment:
+    - AUTHOR=e1
+    labels:
+      - "traefik.port=4200"
+      - "traefik.frontend.rule=Host:alpine-node-ttyjs.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
+
+

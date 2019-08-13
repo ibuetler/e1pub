@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  nginx:
+    image: hackinglab/alpine-nginx
+    environment:
+    - AUTHOR=e1
+    ports:
+    - 80:80

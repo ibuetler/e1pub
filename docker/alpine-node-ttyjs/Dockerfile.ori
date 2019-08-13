@@ -1,13 +1,7 @@
-FROM hackinglab/alpine-nginx:latest
+FROM hackinglab/alpine-base
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
-# Add the files (static web and node app)
-ADD root /
-
-
-# ===================================================================
-# Install node
-ENV NODE_VERSION=v6.11.2 NPM_VERSION=3
+ENV NODE_VERSION=v6.10.0 NPM_VERSION=3
 
 RUN apk upgrade --update && \
     apk add --update git curl sudo make gcc g++ python linux-headers libgcc libstdc++ && \
@@ -17,13 +11,17 @@ RUN apk upgrade --update && \
     make -j$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) && \
     make install && \
     cd / && \
-    npm install -g npm@${NPM_VERSION}
+    npm install -g npm@${NPM_VERSION} 
 
-WORKDIR /usr/node
-RUN npm install -g pm2 http url path
+#    rm -rf /etc/ssl /node-${NODE_VERSION} /usr/include \
+#    /usr/share/man /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp \
+#    /usr/lib/node_modules/npm/man /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html
 
-# ===================================================================
+
+ADD root /
+RUN mkdir /app
+RUN cd /app; npm update; npm install tty.js
+COPY tty.js /app/
 
 
-# Expose the ports for nginx
-EXPOSE 80
+# cd /tty.js && node ./tty-me.js --daemonize

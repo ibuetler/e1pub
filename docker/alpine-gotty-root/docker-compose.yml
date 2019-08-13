@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  gotty-root:
+    image: hackinglab/alpine-gotty-root
+    labels:
+      - "traefik.port=8080"
+      - "traefik.frontend.rule=Host:gotty-root.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
+
+
