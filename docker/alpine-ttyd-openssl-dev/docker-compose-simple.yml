@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  ttypd:
+    image: hackinglab/alpine-ttyd-openssl
+    environment:
+    - AUTHOR=e1
+    - USERID=2000
+    - GROUPID=2000
+    ports:
+    - 6781:6781

@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  ttypd:
+    image: hackinglab/alpine-ttyd-openssl:latest
+    environment:
+    - AUTHOR=e1
+    - USERNAME=hacker
+    labels:
+      - "traefik.port=7681"
+      - "traefik.frontend.rule=Host:ttyd.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
+
+
