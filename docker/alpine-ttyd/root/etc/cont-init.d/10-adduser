@@ -33,3 +33,4 @@ User uid:    $(id -u $USERNAME)
 User gid:    $(id -g $USERNAME)
 -------------------------------------
 "
+

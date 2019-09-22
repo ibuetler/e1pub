@@ -1,5 +1,6 @@
 #!/usr/bin/with-contenv sh
 
+
 echo "================================="
 echo $USERNAME
 echo "================================="
@@ -25,4 +26,5 @@ echo $userid
 echo $groupid
 echo $homedir
 
-exec ttyd -u $userid -g $groupid bash;
+#exec ttyd -u $userid -g $groupid bash --rcfile /etc/bashrc;
+exec ttyd -B -u $userid -g $groupid bash --rcfile /etc/bashrc;
