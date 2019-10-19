@@ -1,0 +1,9 @@
+version: '2'
+services:
+
+  apache:
+    image: hackinglab/alpine-apache-request-catcher
+    labels:
+      - "traefik.apache.port=80"
+      - "traefik.apache.frontend.rule=Host:dump.idocker.hacking-lab.com"
+      - "traefik.apache.protocol=http"
