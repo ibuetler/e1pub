@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  siab:
+    image: hackinglab/alpine-gotty-hacker
+    hostname: 'gotty-hacker'
+    labels:
+        - "traefik.port=8080"
+        - "traefik.frontend.rule=Host:gotty-hacker.idocker.hacking-lab.com"
+        - "traefik.protocol=http"
+

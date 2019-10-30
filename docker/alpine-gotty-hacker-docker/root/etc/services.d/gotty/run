@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+cd /home/hacker
+exec sudo -u hacker /usr/local/bin/gotty --port 8080 --permit-write /bin/zsh
