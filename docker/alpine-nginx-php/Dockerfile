@@ -9,6 +9,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # install packages
 RUN \
 apk add --no-cache \
+        vim \
         curl \
 	nginx \
         expect \
@@ -30,9 +31,7 @@ apk add --no-cache \
 	php7-zip 
 
 # copy local files
-COPY root/ /
+ADD root/ /
 
 # ports and volumes
 EXPOSE 80
-VOLUME /config
-

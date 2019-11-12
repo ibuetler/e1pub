@@ -7,3 +7,5 @@ services:
     - AUTHOR=e1
     ports:
     - 80:80
+    volumes:
+    - ./htdocs:/usr/html

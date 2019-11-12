@@ -4,14 +4,11 @@ services:
 
     nginx:
         image: hackinglab/alpine-nginx-php
-        labels:
-            - "traefik.attacker.port=80"
-            - "traefik.attacker.frontend.rule=Host:attacker.idocker.hacking-lab.com"
-            - "traefik.attacker.protocol=http"
-            - "traefik.victim.port=80"
-            - "traefik.victim.frontend.rule=Host:victim.idocker.hacking-lab.com"
-            - "traefik.victim.protocol=http"
         environment:
             - TZ=Europe/Zurich
-        volumes:
-            - /opt/git/security-research-pocs/script-gadgets/:/opt/www/
+            - CHALLENGE=1
+        ports:
+            - 80:80
+
+
+
