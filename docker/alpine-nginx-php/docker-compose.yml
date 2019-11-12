@@ -6,7 +6,6 @@ services:
         image: hackinglab/alpine-nginx-php
         environment:
             - TZ=Europe/Zurich
-            - CHALLENGE=1
         ports:
             - 80:80
 
