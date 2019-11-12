@@ -1,0 +1,37 @@
+#!/usr/bin/with-contenv bash
+
+pwd1=`openssl rand -base64 18`
+pwd2=`openssl rand -base64 18`
+
+echo "================================="
+echo $USERNAME
+echo "================================="
+
+if [ "$USERNAME" != "" ]; then
+  if [ "$USERNAME" == "root" ]; then
+    echo "USERNAME=root"
+    echo 'root:$pwd2' | chpasswd
+  else
+    echo "USERNAME not empty and not root"
+    adduser -D -u 2000 $USERNAME
+    echo "root:$pwd2" | chpasswd
+    echo "$USERNAME:$pwd1" | chpasswd
+  fi
+else
+  export USERNAME=hacker
+  echo "USERNAME not defined - will use default username hacker"
+  adduser -D -u 2000 $USERNAME
+  echo "root:$pwd2" | chpasswd
+  echo "$USERNAME:$pwd1" | chpasswd
+fi
+
+echo "
+-------------------------------------
+GID/UID
+-------------------------------------
+User uid:    $(id -u $USERNAME)
+User gid:    $(id -g $USERNAME)
+-------------------------------------
+"
+
+
