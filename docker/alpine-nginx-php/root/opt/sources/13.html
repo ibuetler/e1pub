@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<link rel=stylesheet href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+<div>
+<img src="spy_vs_spy.png">
+
+
+
+<div id="container">
+	What input will make the "Generated Output" equal to the "Desired Output"? </br>
+
+	</br>
+	</br>
+	<input type="text" placeholder="Type a string" id="code">
+
+	</div>
+
+
+</br>
+Generated Output:
+<div id="output">__________</div>
+
+</br>
+Desired Output:
+<div id="target_output">1000101 1110110 1100101 1101110 100000 1100001 100000 1100010 1110010 1101111 1101011 1100101 1101110 100000 1100011 1101100 1101111 1100011 1101011 100000 1101001 1110011 100000 1110010 1101001 1100111 1101000 1110100 100000 1110100 1110111 1101001 1100011 1100101 100000 1100001 100000 1100100 1100001 1111001 101110</div>
+
+
+<div id="success"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#code').focus();
+		$('#code').keypress(function(event){
+			var input = $('#code').val()+ event.key; 
+			
+			$.ajax({
+				method: "POST",
+				url: "encode.php",
+				data: {code: input, function: 13 },
+				success: function(status) {
+					$('#output').text(status);
+                			if  ($('#output').text() == $('#target_output').text()){
+                                              $('#success').text("Congratulations you have solved the challenge.");
+					}		
+
+				}
+			});
+		});
+		
+	}); 
+</script>
+<div>
+</body>
+</html>
+
+
+

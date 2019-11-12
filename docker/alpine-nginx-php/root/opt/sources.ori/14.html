@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<link rel=stylesheet href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+<div>
+<img src="spy_vs_spy.png">
+
+
+
+<div id="container">
+In this scenario you have intercepted a secret message.</br>
+You do not know what methods were used to encode the message. </br>
+However you have gained access to an input box which can encode a new message using the same method.</br>
+Your task it to submit input into the input box until the Generated message is the same as the Desired message. </br>
+
+</br>
+</br>
+<input type="text" placeholder="Type a string" id="code">
+
+</div>
+
+
+</br>
+Generated Output:
+<div id="output">__________</div>
+
+</br>
+Desired Output:
+<div id="target_output">4279746520636f6465207265616c6c79206d616b6573206d616c7761726520616e616c7973697320646966666963756c7421</div>
+
+
+<div id="success"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#code').focus();
+		$('#code').keypress(function(event){
+			var input = $('#code').val()+ event.key; 
+
+			
+			$.ajax({
+				method: "POST",
+				url: "encode.php",
+				data: {code: input, function: 14 },
+				success: function(status) {
+					$('#output').text(status);
+                			if  ($('#output').text() == $('#target_output').text()){
+                                              $('#success').text("Congratulations you have solved the challenge. ");
+					}		
+
+				}
+			});
+		});
+		
+	}); 
+</script>
+<div>
+</body>
+</html>
+
+
+
