@@ -13,7 +13,7 @@ RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get -y install gnupg2
 
-RUN echo "deb [arch=amd64] http://repo.hacking-lab.com/ bazooka main" > /etc/apt/sources.list.d/hl.list
+RUN echo "deb [arch=amd64] http://repo.hacking-lab.com/ kookarai main" > /etc/apt/sources.list.d/hl.list
 RUN echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list.d/kali.list
 RUN mkdir -p /opt/applic/
 ADD hl.key /opt/applic/
