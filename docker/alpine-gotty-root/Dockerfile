@@ -44,7 +44,6 @@ ADD ./files/timhaak.zsh-theme /root/.oh-my-zsh/themes/timhaak.zsh-theme
 ADD ./files/.aliases /root/.aliases
 
 RUN echo "source /root/.aliases" >> /root/.zshrc
-RUN echo 'root:rTiwerxeUeFBzTucbyG2' | chpasswd
 
 ADD root /
 

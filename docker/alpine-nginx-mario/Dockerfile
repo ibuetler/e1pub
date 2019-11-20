@@ -1,4 +1,4 @@
-FROM hackinglab/alpine-nginx
+FROM hackinglab/alpine-nginx:latest
 
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com> 
 

@@ -1,4 +1,4 @@
-FROM hackinglab/alpine-base
+FROM hackinglab/alpine-base:latest
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
 ENV LANG="en_US.UTF-8" \
@@ -45,8 +45,6 @@ ADD ./files/.aliases /root/.aliases
 
 RUN echo "source /root/.aliases" >> /root/.zshrc
 RUN adduser -D -u 1337 hacker
-RUN echo 'hacker:compass' | chpasswd
-RUN echo 'root:rTGeUeFBzTucbyG2' | chpasswd
 
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /home/hacker/.oh-my-zsh && \
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template /home/hacker/.zshrc 
