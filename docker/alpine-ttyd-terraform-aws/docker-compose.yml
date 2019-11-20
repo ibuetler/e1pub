@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  ttypd:
+    image: hackinglab/alpine-ttyd-terraform-aws:latest
+    environment:
+    - AUTHOR=e1
+    - USERNAME=root
+    labels:
+      - "traefik.port=7681"
+      - "traefik.frontend.rule=Host:aws.idocker.hacking-lab.com"
+      - "traefik.protocol=http"
+
+
