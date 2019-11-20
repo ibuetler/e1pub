@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+env
+
+main() {
+  # if the container started with a proper --volume option
+  if [ -e $SOCKET ]; then
+    # starts a socat proxy from a unix socket to the port
+    # socat -d -d TCP4-LISTEN:${LPORT},fork,reuseaddr UNIX-CONNECT:${SOCKET}
+    socat -d -d TCP4-LISTEN:${LPORT},fork,reuseaddr TCP:${RHOST}:${RPORT}
+  else
+    # otherwise prints the correct command to stdout
+    cat << EOF
+    socat -d -d TCP4-LISTEN:${LPORT},fork,reuseaddr TCP:${RHOST}:${RPORT}
+EOF
+  fi
+}
+
+main "$@"

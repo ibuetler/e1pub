@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  socat:
+    image: hackinglab/alpine-socat
+    labels: 
+     - "traefik.enable=false"
+    ports:
+     - 1234:1234
+    environment:
+     - LPORT=1234
+     - RHOST=127.0.0.1
+     - RPORT=22
