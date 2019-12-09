@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  mysql: 
+    image: hackinglab/alpine-mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: abcdefghijk
+      MYSQL_DATABASE: glocken
+      MYSQL_USER: glocken-user
+      MYSQL_PASSWORD: gugus.gugus
+      LISTEN: 0.0.0.0
+
+

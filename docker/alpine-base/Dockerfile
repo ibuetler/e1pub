@@ -5,7 +5,7 @@ MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 ENV S6_OVERLAY_VERSION=v1.22.1.0 \
     GO_DNSMASQ_VERSION=1.0.7
 
-RUN apk add --update --no-cache bind-tools curl libcap bash net-tools 
+RUN apk add --update --no-cache bind-tools curl libcap bash net-tools openssl
 RUN apk upgrade --available
 RUN curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz | tar xfz - -C / 
 RUN echo "========="
