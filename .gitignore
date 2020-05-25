@@ -1,0 +1,6 @@
+.DS_Store
+.DS_Store/*
+.oh-my-zsh
+Thumbs.db
+Thumbs.db:encryptable
+*.Zone.Identifier
