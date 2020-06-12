@@ -1,12 +1,15 @@
 FROM hackinglab/alpine-base:latest
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
-ENV TERRAFORM_VERSION=0.12.12
+ENV TERRAFORM_VERSION=0.12.26
 
 # Install nginx
 RUN echo "http://dl-4.alpinelinux.org/alpine/v3.10/main/" >> /etc/apk/repositories && \
-    apk add --update openssl ttyd make curl openssh groff less python py-pip && \
-    pip install awscli 
+    apk add --update openssl ttyd make curl openssh groff less python py-pip
+
+RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o /tmp/awscliv2.zip  && \
+    unzip /tmp/awscliv2.zip -d /opt/ && \
+    /opt/aws/install -i /usr/local/aws-cli -b /usr/local/bin
 
 
 RUN curl -sSL https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
