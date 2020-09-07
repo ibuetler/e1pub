@@ -1,0 +1,21 @@
+# docker-compose.yml example
+
+tor:
+  image: goldy/tor-hidden-service
+  links:
+    - compass
+  environment:
+      PORT_MAP: 80 # Map port to detected service
+  volumes:
+    - ./keys:/var/lib/tor/hidden_service/
+
+compass:
+  image: ibuetler/debian-reverse-proxy
+  hostname: compass
+  volumes:
+    - ./config/reverse_proxy.conf:/etc/apache2/sites-enabled/reverse_proxy.conf:ro
+  command:
+    - /usr/sbin/apachectl
+    - -DFOREGROUND
+
+
