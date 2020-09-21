@@ -1,0 +1,32 @@
+#!/usr/bin/with-contenv sh
+
+
+echo "================================="
+echo $USERNAME
+echo "================================="
+
+if [ "$USERNAME" != "" ]; then
+  if [ "$USERNAME" == "root" ]; then
+    echo "USERNAME=root"
+  else
+    echo "USERNAME not empty and not root"
+    echo "USERNAME=$USERNAME"
+  fi
+else
+  echo "USERNAME empty and we will set the default username to hacker"
+  export USERNAME=hacker
+  echo "USERNAME=$USERNAME"
+fi
+
+homedir=$( getent passwd "$USERNAME" | cut -d: -f6 )
+userid=$( id -u "$USERNAME" ) 
+groupid=$( id -g "$USERNAME" )
+cd $homedir
+echo $userid
+echo $groupid
+echo $homedir
+
+#exec ttyd -u $userid -g $groupid bash --rcfile /etc/bashrc;
+
+# do not detach (-D), log to stderr (-e), passthrough other arguments
+exec /usr/sbin/sshd -D -e "$@"
