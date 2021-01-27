@@ -1,5 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-# generate host keys if not present
-ssh-keygen -A
-

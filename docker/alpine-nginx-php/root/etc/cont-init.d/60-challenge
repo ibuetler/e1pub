@@ -1,5 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-cp /opt/sources/$CHALLENGE.html /opt/www/index.html
-
-

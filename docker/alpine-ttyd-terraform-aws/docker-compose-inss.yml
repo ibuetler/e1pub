@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  ttypd:
+    image: hackinglab/alpine-ttyd-terraform-aws
+    environment:
+    - AUTHOR=e1
+    - USERID=2000
+    - GROUPID=2000
+    volumes:
+    - /opt/winattacklab-fho7/:/opt/winattacklab-fho7/
+    ports:
+    - 7681:7681

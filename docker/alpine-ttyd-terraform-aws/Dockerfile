@@ -1,10 +1,12 @@
 FROM hackinglab/alpine-base:latest
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
-ENV TERRAFORM_VERSION=0.12.26
+#ENV TERRAFORM_VERSION=0.12.26
+ENV TERRAFORM_VERSION=0.13.5
+ENV ALPINE_VERSION=v3.11
 
-# Install nginx
-RUN echo "http://dl-4.alpinelinux.org/alpine/v3.10/main/" >> /etc/apk/repositories && \
+# Install 
+RUN echo "http://dl-4.alpinelinux.org/alpine/${ALPINE_VERSION}/main/" >> /etc/apk/repositories && \
     apk add --update openssl ttyd make curl openssh groff less python py-pip
 
 RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o /tmp/awscliv2.zip  && \
